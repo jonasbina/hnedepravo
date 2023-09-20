@@ -7,15 +7,15 @@ author:
   name: Tomáš Bouchal
   picture: '/assets/blog/authors/tb.jpg'
 ogImage:
-  url: '/assets/blog/dynamic-routing/cover.jpg'
+  url: '/1.png'
 ---
-### Události a komentáře:
+# Události a komentáře:
 
 ## Dne 12.9. proběhly dva rozhovory, jeden s kandidátem do parlamentu a druhý s aktuální předsedkyní vlády: Sárou Suzuki.  
 
 ## Pozn. Redakce: Tyto volby nemají nic společného s úterním incidentem mezi Sárou a Dominikem úředně zvaným „Sárnik“. Také bychom chtěli poznamenat, že tento spor již byl mimosoudně vyřešen. 
 
-# Upozornění: Oba dva rozhovory jsou velmi explicitní a nevhodné pro čtenáře od věku… vlastně jenom pro Lojzu <3. 
+### Upozornění: Oba dva rozhovory jsou velmi explicitní a nevhodné pro čtenáře od věku… vlastně jenom pro Lojzu <3. 
 
 Reportér: „Dnes bych tu chtěl přivítat pana Čing – čonga Mirku“ Mirka: „Zdravím všechny a Sáro zemři“ 
 
@@ -65,7 +65,7 @@ Sára „Nene, to je prostě krutá realita toho že takhle to tady funguje.“
 
 Dav: „Neeee, vyhraje KOMUNISMUSSSSSSS“ \*vyženou Sáru ze studia\* 
 
-### Hlášky týdne: 
+# Hlášky týdne: 
 
 Ono to dělá víc nahlas, podle toho, v jaký je to poloze. 
 
@@ -75,6 +75,6 @@ Velká tělocvična je velká.
 
 -Pan učitel Richtr
 
-### Zajímavost týdne
+# Zajímavost týdne
 
 Kdyby všichni lidé na planetě skočili do moře, jeho hladina by stoupla pouze o 1,7006673207m. 

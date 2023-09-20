@@ -1,10 +1,15 @@
 import Head from 'next/head'
-
+import Image from 'next/image'
 
 const Header = () => {
   return (
     <div>
-        <img src="/logo.svg" alt="Hnědé Právo" />  
+        <Image
+        src="/logo.svg"
+        alt="logo"
+        sizes="80vw"
+        fill
+        />
     </div>
     
   )
