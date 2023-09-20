@@ -1,5 +1,5 @@
 ﻿---
-title: '1. řada Hnědého práva'
+title: '1. díl Hnědého práva'
 excerpt: ''
 coverImage: '/1.png'
 date: '2023-09-11T08:10:00.000Z'
