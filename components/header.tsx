@@ -4,7 +4,7 @@ import Image from 'next/image'
 const Header = () => {
   return (
     <div>
-        <Image src="/logo.svg" height={1500} width={1000} />
+        <Image src="/logo.svg" height={1500} width={1000} alt="logo" />
     </div>
     
   )
