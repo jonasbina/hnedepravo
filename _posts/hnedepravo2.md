@@ -11,13 +11,12 @@ ogImage:
 ---
 
 
-**Události a komentáře:**
-=========================
-## Dne 12.9. proběhly dva rozhovory, jeden s kandidátem do parlamentu a druhý s aktuální předsedkyní vlády: Sárou Suzuki.  
+## **Události a komentáře:**
+### Dne 12.9. proběhly dva rozhovory, jeden s kandidátem do parlamentu a druhý s aktuální předsedkyní vlády: Sárou Suzuki.  
 
-## Pozn. Redakce: Tyto volby nemají nic společného s úterním incidentem mezi Sárou a Dominikem úředně zvaným „Sárnik“. Také bychom chtěli poznamenat, že tento spor již byl mimosoudně vyřešen. 
+### Pozn. Redakce: Tyto volby nemají nic společného s úterním incidentem mezi Sárou a Dominikem úředně zvaným „Sárnik“. Také bychom chtěli poznamenat, že tento spor již byl mimosoudně vyřešen. 
 
-### Upozornění: Oba dva rozhovory jsou velmi explicitní a nevhodné pro čtenáře od věku… vlastně jenom pro Lojzu <3. 
+#### Upozornění: Oba dva rozhovory jsou velmi explicitní a nevhodné pro čtenáře od věku… vlastně jenom pro Lojzu <3. 
 
 Reportér: „Dnes bych tu chtěl přivítat pana Čing – čonga Mirku“ 
 
