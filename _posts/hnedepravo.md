@@ -10,8 +10,8 @@ ogImage:
   url: '/1.png'
 ---
 
-# *Události a komentáře:*
-
+**Události a komentáře:**
+=========================
 ## Dne 7.9. se v domovské třídě TERCIE uskutečnil famfrpálový turnaj. 
 
 ### Z důvodu malého počtu účastníků soutěžili však jen dva týmy, v každém bylo po jednom hráči. Ze stejného důvodu neprobíhala normální hra, ale probíhal jen souboj o zlatonku. Po dlouhé hře se podařilo zlatonku chytit panu Tobiáši Pecovi. Jelikož byl Tobiáš zavalen slávou a ostatními novináři, podařilo se udělat rozhovor jen s hráčem který prohrál, tedy s Kryštofem Klenovským. 
@@ -46,4 +46,4 @@ Kryštof: Neshledanou.
 
 „Šťýřy.“ 
 
--Sára 2022
+-Sára 2023

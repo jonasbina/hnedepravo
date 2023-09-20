@@ -10,15 +10,18 @@ ogImage:
   url: '/2.png'
 ---
 
-# *Události a komentáře:*
 
+**Události a komentáře:**
+=========================
 ## Dne 12.9. proběhly dva rozhovory, jeden s kandidátem do parlamentu a druhý s aktuální předsedkyní vlády: Sárou Suzuki.  
 
 ## Pozn. Redakce: Tyto volby nemají nic společného s úterním incidentem mezi Sárou a Dominikem úředně zvaným „Sárnik“. Také bychom chtěli poznamenat, že tento spor již byl mimosoudně vyřešen. 
 
 ### Upozornění: Oba dva rozhovory jsou velmi explicitní a nevhodné pro čtenáře od věku… vlastně jenom pro Lojzu <3. 
 
-Reportér: „Dnes bych tu chtěl přivítat pana Čing – čonga Mirku“ Mirka: „Zdravím všechny a Sáro zemři“ 
+Reportér: „Dnes bych tu chtěl přivítat pana Čing – čonga Mirku“ 
+
+Mirka: „Zdravím všechny a Sáro zemři“ 
 
 Reportér: „Myslíte si že budete mít úspěch v nadcházejících volbách?“ 
 
@@ -38,17 +41,23 @@ Reportér: „Proti komu ji budete přesně bránit?“
 
 Mirka: „Před americkými imperialisty.“ 
 
-Reportér: „A ještě na konec, máte nějaký vzkaz pro nerozhodnuté voliče?“ Mirka: „Volte mě a stanou se z vás vojáci!!!“ 
+Reportér: „A ještě na konec, máte nějaký vzkaz pro nerozhodnuté voliče?“
+
+Mirka: „Volte mě a stanou se z vás vojáci!!!“ 
 
 Reportér: „A jako druhého hosta bych chtěl přivítat Sáru, aktuální předsedkyni vlády“ 
 
-Dav: „Bůůůůůů“ Sára: „Dobrý den.“ 
+Dav: „Bůůůůůů“
+
+Sára: „Dobrý den.“ 
 
 Reportér: „Co si myslíte o tom, že váš hlavní rival ve volbách říká, že demokracie dlouho nepřežije?“ 
 
 Dav: „Anoooo“ 
 
-Sára: „Tak za prvé, u vás nefunguje demokracie, protože jste zbaveni práv.“ Dav: „Fuuuj Suzuki, Komunismuuuuus, AAAAAAAAAAA“ 
+Sára: „Tak za prvé, u vás nefunguje demokracie, protože jste zbaveni práv.“
+
+Dav: „Fuuuj Suzuki, Komunismuuuuus, AAAAAAAAAAA“ 
 
 Reportér: „Co si myslíte o tom že pan Mirka kandiduje s programem ZBROJI, ZBROJIT, ZBROJIT!!!“ 
 
