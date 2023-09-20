@@ -14,7 +14,7 @@ ogImage:
 
 ### Dne 7.9. se v domovské třídě TERCIE uskutečnil famfrpálový turnaj. 
 
-#### Z důvodu malého počtu účastníků soutěžili však jen dva týmy, v každém bylo po jednom hráči. Ze stejného důvodu neprobíhala normální hra, ale probíhal jen souboj o zlatonku. Po dlouhé hře se podařilo zlatonku chytit panu Tobiáši Pecovi. Jelikož byl Tobiáš zavalen slávou a ostatními novináři, podařilo se udělat rozhovor jen s hráčem který prohrál, tedy s Kryštofem Klenovským. 
+*Z důvodu malého počtu účastníků soutěžili však jen dva týmy, v každém bylo po jednom hráči. Ze stejného důvodu neprobíhala normální hra, ale probíhal jen souboj o zlatonku. Po dlouhé hře se podařilo zlatonku chytit panu Tobiáši Pecovi. Jelikož byl Tobiáš zavalen slávou a ostatními novináři, podařilo se udělat rozhovor jen s hráčem který prohrál, tedy s Kryštofem Klenovským.*
 
 Reportér: No, jaké z toho máte pocity? 
 
@@ -22,7 +22,9 @@ Kryštof: Docela dobrý, myslim, že zápas by dost vyrovnanej a že Peca vyhrá
 
 Reportér: (souhlasně přikyvuje) no a co říkáte že na tomto ročníku famrfrpálového turnaje bylo tak málo účastníků?
 
-Kryštof: (smutně) Mno, vopravdu mě to jako mrzí, myslel jsem si že účast bude větší a že to bude největší turnaj vůbec, ale ukázal se opak no…  Reportér: Tak já Vám přeji hodně štěstí do příštího roku a zatím neshledanou. 
+Kryštof: (smutně) Mno, vopravdu mě to jako mrzí, myslel jsem si že účast bude větší a že to bude největší turnaj vůbec, ale ukázal se opak no… 
+
+Reportér: Tak já Vám přeji hodně štěstí do příštího roku a zatím neshledanou. 
 
 Kryštof: Neshledanou. 
 
