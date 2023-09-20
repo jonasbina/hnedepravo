@@ -10,11 +10,11 @@ ogImage:
   url: '/assets/blog/dynamic-routing/cover.jpg'
 ---
 
-# Události a komentáře: 
+### Události a komentáře: 
 
 ## Dne 7.9. se v domovské třídě TERCIE uskutečnil famfrpálový turnaj. 
 
-### Z důvodu malého počtu účastníků soutěžili však jen dva týmy, v každém bylo po jednom hráči. Ze stejného důvodu neprobíhala normální hra, ale probíhal jen souboj o zlatonku. Po dlouhé hře se podařilo zlatonku chytit panu Tobiáši Pecovi. Jelikož byl Tobiáš zavalen slávou a ostatními novináři, podařilo se udělat rozhovor jen s hráčem který prohrál, tedy s Kryštofem Klenovským. 
+# Z důvodu malého počtu účastníků soutěžili však jen dva týmy, v každém bylo po jednom hráči. Ze stejného důvodu neprobíhala normální hra, ale probíhal jen souboj o zlatonku. Po dlouhé hře se podařilo zlatonku chytit panu Tobiáši Pecovi. Jelikož byl Tobiáš zavalen slávou a ostatními novináři, podařilo se udělat rozhovor jen s hráčem který prohrál, tedy s Kryštofem Klenovským. 
 
 Reportér: No, jaké z toho máte pocity? 
 
@@ -26,7 +26,7 @@ Kryštof: (smutně) Mno, vopravdu mě to jako mrzí, myslel jsem si že účast 
 
 Kryštof: Neshledanou. 
 
-# Hlášky týdne: 
+### Hlášky týdne: 
 
 „JSEM TEPLEEEEEJ!!!!“ 
 
