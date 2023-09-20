@@ -18,7 +18,7 @@ ogImage:
 
 Reportér: No, jaké z toho máte pocity? 
 
-Kryštof: Docela dobrý, myslim, že zápas by dost vyrovnanej a že Peca vyhrál jen díky štěstí. 
+Kryštof: Docela dobrý, myslim, že zápas byl dost vyrovnanej a že Peca vyhrál jen díky štěstí. 
 
 Reportér: (souhlasně přikyvuje) no a co říkáte že na tomto ročníku famrfrpálového turnaje bylo tak málo účastníků?
 
