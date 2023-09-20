@@ -10,7 +10,7 @@ ogImage:
   url: '/1.png'
 ---
 
-# Události a komentáře: 
+# *Události a komentáře:*
 
 ## Dne 7.9. se v domovské třídě TERCIE uskutečnil famfrpálový turnaj. 
 
@@ -26,7 +26,7 @@ Kryštof: (smutně) Mno, vopravdu mě to jako mrzí, myslel jsem si že účast 
 
 Kryštof: Neshledanou. 
 
-# Hlášky týdne: 
+## Hlášky týdne: 
 
 „JSEM TEPLEEEEEJ!!!!“ 
 

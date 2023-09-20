@@ -9,7 +9,8 @@ author:
 ogImage:
   url: '/2.png'
 ---
-# Události a komentáře:
+
+# *Události a komentáře:*
 
 ## Dne 12.9. proběhly dva rozhovory, jeden s kandidátem do parlamentu a druhý s aktuální předsedkyní vlády: Sárou Suzuki.  
 
@@ -65,7 +66,7 @@ Sára „Nene, to je prostě krutá realita toho že takhle to tady funguje.“
 
 Dav: „Neeee, vyhraje KOMUNISMUSSSSSSS“ \*vyženou Sáru ze studia\* 
 
-# Hlášky týdne: 
+## Hlášky týdne: 
 
 Ono to dělá víc nahlas, podle toho, v jaký je to poloze. 
 
@@ -75,6 +76,6 @@ Velká tělocvična je velká.
 
 -Pan učitel Richtr
 
-# Zajímavost týdne
+## Zajímavost týdne
 
 Kdyby všichni lidé na planetě skočili do moře, jeho hladina by stoupla pouze o 1,7006673207m. 
