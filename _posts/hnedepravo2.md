@@ -1,13 +1,13 @@
 ﻿---
 title: '2. řada Hnědého práva'
 excerpt: ''
-coverImage: '/2.png'
+coverImage: '/2.jpg'
 date: '2023-09-18T08:10:00.000Z'
 author:
   name: Tomáš Bouchal
   picture: '/assets/blog/authors/tb.jpg'
 ogImage:
-  url: '/2.png'
+  url: '/2.jpg'
 ---
 
 
