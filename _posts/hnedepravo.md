@@ -1,7 +1,7 @@
 ﻿---
 title: '1. řada Hnědého práva'
 excerpt: ''
-coverImage: '/assets/blog/dynamic-routing/cover.jpg'
+coverImage: '/1.png'
 date: '2023-09-11T08:10:00.000Z'
 author:
   name: Tomáš Bouchal
