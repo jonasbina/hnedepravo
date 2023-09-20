@@ -1,6 +1,6 @@
 ﻿---
-title: '1. díl Hnědého práva'
-excerpt: ''
+title: 'Epický famfrpálový turnaj očima Kryštofa Klenovského'
+excerpt: '1. díl Hnědého práva'
 coverImage: '/1.png'
 date: '2023-09-11T08:10:00.000Z'
 author:

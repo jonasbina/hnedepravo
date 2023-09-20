@@ -1,6 +1,6 @@
 ﻿---
-title: '2. díl Hnědého práva'
-excerpt: ''
+title: '"Suzuki vám nedá řízek!" říká Čing-Čong Mirka'
+excerpt: '2. díl Hnědého práva'
 coverImage: '/2.jpg'
 date: '2023-09-18T08:10:00.000Z'
 author:
