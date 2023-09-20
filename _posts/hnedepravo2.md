@@ -26,7 +26,9 @@ Reportér: „Myslíte si že budete mít úspěch v nadcházejících volbách?
 
 Mirka: „Samozřejmě, žádné SUZUKI nemůže nikdy vyhrát. Žádná demokracie nevydrží navždy, ale co navždy vydrží, je komunismus.“ 
 
-Reportér: „Co vlastně kritizujete na vládě strany Sára SUZUKI?“ Mirka: „Všechno, hlavně tu demokracii.“ 
+Reportér: „Co vlastně kritizujete na vládě strany Sára SUZUKI?“
+
+Mirka: „Všechno, hlavně tu demokracii.“ 
 
 Reportér: „Máte nějaký speciální program, který se liší od programu SUZUKI?“ 
 
