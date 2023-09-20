@@ -22,7 +22,6 @@ export default function Index({ allPosts }: Props) {
           <title>{`Hnědé Právo`}</title>
         </Head>
         <Container>
-          <Intro />
           {heroPost && (
             <HeroPost
               title={heroPost.title}
