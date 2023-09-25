@@ -51,6 +51,8 @@ Verze Jonáše Hlíny: „Já jsem si tam prostě stál a čiloval se svojí kom
 
 ![Alt text](../public/IMG-20230925-WA0000.jpg)
 
+*Ornitoptéra na Přibyslavském letišti. Foto: Štefan Saban*
+
 ## **Hlášky týdne:**
 
 
