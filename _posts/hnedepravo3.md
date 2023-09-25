@@ -49,7 +49,7 @@ Verze Jonáše Hlíny: „Já jsem si tam prostě stál a čiloval se svojí kom
 ### **Reportér z terénu:** *Dnes jsem šel po ulici z obchodu a potkal jsem pana Bechyněho. Mimochodem, my dva jsme jediní normální obyvatelé Přibyslavi. Ten mi říkal, že letěl z Přibyslavského letiště a že tam místo letadel létají ornitoptéry. Ale co je ještě zajímavější, Přibyslavané je vidí jako čínské mraky. Tak jsem se byl zeptat pilota, ten mi řekl, že je to pravda, a odletěl.*
 ### -Štefan Sulfan
 
-![Alt text](../public/IMG-20230925-WA0000.jpg)
+![Alt text](../IMG-20230925-WA0000.jpg)
 
 ## **Hlášky týdne:**
 
