@@ -34,7 +34,9 @@ Mirka: „Tak jako za prvé, všichni, kdo mě volili, dostanou nějakou ministe
 
 Reportér: „A máte ještě nápad na nějaký nový zákon?"
 
-Mirka: „Ano, všichni budou muset povinně do naší dělnické armády." Reportér: „Tak já Vám děkuji za rozhovor a nashledanou."
+Mirka: „Ano, všichni budou muset povinně do naší dělnické armády." 
+
+Reportér: „Tak já Vám děkuji za rozhovor a nashledanou."
 
 Mirka: „Nashledanou."
 
