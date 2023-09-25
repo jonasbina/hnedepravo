@@ -50,6 +50,8 @@ Verze Jonáše Hlíny: „Já jsem si tam prostě stál a čiloval se svojí kom
 ### -Štefan Sulfan
 
 ![Alt text](../IMG-20230925-WA0000.jpg)
+*Ornitoptéra na letišti v Přibyslavi. Foto: Štefan Sulfan*
+
 
 ## **Hlášky týdne:**
 
