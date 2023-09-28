@@ -48,4 +48,4 @@ Kryštof: Neshledanou.
 
 „Šťýřy.“ 
 
--Sára 2023
+-Sára 2022
