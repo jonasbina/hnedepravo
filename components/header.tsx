@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 const Header = () => {
   return (
-    <div>
+    <div className='content-center'>
       <Link href="/">
       <a>
         <Image src="/logo.svg" height={700} width={1000} alt="logo" />
