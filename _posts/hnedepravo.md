@@ -9,6 +9,7 @@ author:
 ogImage:
   url: '/1.png'
 ---
+<span style="color:orange">
 
 ## **Události a komentáře:**
 
@@ -49,3 +50,4 @@ Kryštof: Neshledanou.
 „Šťýřy.“ 
 
 -Sára 2022
+</span>
