@@ -9,8 +9,6 @@ author:
 ogImage:
   url: '/1.png'
 ---
-<span style="color:orange">
-
 ## **Události a komentáře:**
 
 ### Dne 7.9. se v domovské třídě TERCIE uskutečnil famfrpálový turnaj. 
@@ -50,4 +48,3 @@ Kryštof: Neshledanou.
 „Šťýřy.“ 
 
 -Sára 2022
-</span>
