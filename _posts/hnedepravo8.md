@@ -1,3 +1,14 @@
+---
+title: 'Kvido Vododělník - Postrach všech školníků!'
+excerpt: '8. díl Hnědého práva'
+coverImage: '/8.png'
+date: '2023-10-30T07:00:00.000Z'
+author:
+  name: Tomáš Bouchal
+  picture: '/assets/blog/authors/tb.jpg'
+ogImage:
+  url: '/8.png'
+---
 ## **Události a komentáře:**
 
 *Dne 24.10 se ve škole rozezněl alarm. Studentům bylo řečeno, že se nic
@@ -40,8 +51,9 @@ Reportér: „Aha, jasně, děkuji a nashledanou.“
 
 - Paní učitelka Kocmanová
 
+*s tímto "humorem" nemá webová verze hnědého práva nic společného - kvůli případné újmě na duševním zdraví kontaktujte předsedu špatného humoru, Adama Haflíčka.*
 
-# Surrealistický rozhovor:
+## **Surrealistický rozhovor:**
 
 1 : Proč se mi koukáš na pr*el?
 
@@ -67,6 +79,9 @@ odpověděl, že používají abacus (počítadlo) a místo grafických karet
 používají mozky nenarozených dětí.*
 
 - Štefan Sulfan
+
+![Alt text](../ilufot8.png)
+*Ilustrační foto. Zdroj : Olga Sulfanová*
 
 ## **Vtip týdne:**
 
