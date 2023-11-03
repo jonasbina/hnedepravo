@@ -7,11 +7,18 @@ const randomTexts = [
     'Čte to vůbec někdo?',
     'Vyčůrej se do spacáku.',
     'Pullni ten trigger a bude z tebe n-',
-    'Ahoj, jmenuji se Jarda je mi jednačtyřicet a jsem youtuber!',
+    'Ahoj, je mi Jarda jmenuji se jednačtyřicet a jsem youtuber!',
     'Mňau',
-    'Dex dex dex,',
+    'Dex dex dex, chce mít se mnou -',
     'Propaganda mňam',
-    'ŠTEFAN? Však to je Elvis Presley!!'
+    'Věděli jste, že pokud přijdete o obě nohy, nebudete už moct chodit?',
+    'ŠTEFAN? Však to je Elvis Presley!!',
+    'ŠTEFAN? Však to je Elvis Presley!!',
+    'ŠTEFAN? Však to je Elvis Presley!!',
+    'ŠTEFAN? Však to je Elvis Presley!!',
+    'Jsem ve tvých zdech *For legal reasons that`s a joke',
+    'Věděli jste, že jste nevěděli?',
+    'Bagr je v podstatě traktor, který umí bagrovat.'
   ];
   
   const randomIndex = Math.floor(Math.random() * randomTexts.length);
