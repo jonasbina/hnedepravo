@@ -7,7 +7,7 @@ const randomTexts = [
     'Čte to vůbec někdo?',
     'Vyčůrej se do spacáku.',
     'Pullni ten trigger a bude z tebe n-',
-    'Ahoj, je mi Jarda jmenuji se jednačtyřicet a jsem youtuber!',
+    'Ahoj, je mi Jarda, jmenuji se jednačtyřicet a jsem youtuber!',
     'Mňau',
     'Dex dex dex, chce mít se mnou -',
     'Propaganda mňam',
