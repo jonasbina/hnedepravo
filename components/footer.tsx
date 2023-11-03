@@ -18,7 +18,7 @@ const randomTexts = [
   const randomText = randomTexts[randomIndex];
   
   const Footer = () => (
-    <footer style={{ textAlign: 'center', backgroundColor: 'black', color: 'white' }}>
+    <footer style={{ textAlign: 'center', backgroundColor: 'black', color: 'white', padding: '10px', fontSize: '1.2em' }}>
       {randomText}
     </footer>
   );
