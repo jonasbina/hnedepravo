@@ -9,7 +9,7 @@ const randomTexts = [
     'Pullni ten trigger a bude z tebe n-',
     'Ahoj, je mi Jarda, jmenuji se jednačtyřicet a jsem youtuber!',
     'Mňau',
-    'Dex dex dex, chce mít se mnou -',
+    'Dex dex dex -',
     'Propaganda mňam',
     'Věděli jste, že pokud přijdete o obě nohy, nebudete už moct chodit?',
     'JAKEJ ŠTEFAN? Však to je Elvis Presley!!',
