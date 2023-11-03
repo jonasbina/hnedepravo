@@ -6,7 +6,7 @@ const Header = () => {
     <div className='w-1/1 content-center'>
       <Link href="/">
       <a>
-        <Image src="/logohalloween.png" height={400} width={1000} alt="logo" />
+        <Image src="/logo.svg" height={400} width={1000} alt="logo" />
         </a>
         </Link>
     </div>
