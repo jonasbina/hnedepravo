@@ -1,5 +1,5 @@
 ---
-title: 'Prezident uchvácen tancem! Posílal mu Palmovský nudes?!'
+title: 'Tým Köck brutálně vyhrál turnaj ve vybíjené! Může za to Elvis Presley?!'
 excerpt: '11. díl Hnědého práva'
 coverImage: '/11.png'
 date: '2023-11-20T07:00:00.000Z'
