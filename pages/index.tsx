@@ -18,6 +18,14 @@ export default function Index({ allPosts }: Props) {
   return (
     <>
       <Layout>
+
+        <Head>
+          <meta charSet="utf-8" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="description" content="Pullni ten trigger a bude z tebe n-" />
+          <title>Hnědé Právo</title>
+        </Head>
+
         <Header/>
         <Container>
           {heroPost && (
