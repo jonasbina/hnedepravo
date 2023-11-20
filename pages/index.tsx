@@ -7,6 +7,7 @@ import Head from 'next/head'
 import { CMS_NAME } from '../lib/constants'
 import Post from '../interfaces/post'
 import Header from '../components/header'
+import { Analytics } from '@vercel/analytics/react';
 
 type Props = {
   allPosts: Post[]
@@ -41,6 +42,7 @@ export default function Index({ allPosts }: Props) {
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
       </Layout>
+      <Analytics/>
     </>
   )
 }
