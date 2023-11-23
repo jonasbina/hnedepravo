@@ -31,7 +31,7 @@ const Header = () => {
         </a>
         </Link>
 
-        <footer style={{ textAlign: 'center', backgroundColor: 'transparent', color: 'black', padding: '35px', fontSize: '1.6em' }}>
+        <footer style={{ textAlign: 'center', backgroundColor: 'transparent', color: 'black', padding: '35px', fontSize: '1.6em', fontWeight: "bold"}}>
             {randomText}
         </footer>
     </div>
