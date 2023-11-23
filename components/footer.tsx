@@ -3,7 +3,7 @@ import { EXAMPLE_PATH } from '../lib/constants'
 import { useState } from 'react';
 
 const Footer = () => {
-    const [rating, setRating] = useState(5);
+    const [rating, setRating] = useState(0);
     const [hoveredRating, setHoveredRating] = useState(0);
 
     const handleRating = (rate: number) => {
