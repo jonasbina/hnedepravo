@@ -30,6 +30,7 @@ const Header = () => {
         <Image src="/logo.svg" height={400} width={1000} alt="logo" />
         </a>
         </Link>
+
         <footer style={{ textAlign: 'center', backgroundColor: 'transparent', color: 'white', padding: '35px', fontSize: '1.6em' }}>
             {randomText}
         </footer>
