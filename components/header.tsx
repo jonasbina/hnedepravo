@@ -27,7 +27,7 @@ const Header = () => {
       <div className='w-full mx-auto text-center'>
           <Link href="/">
               <a>
-                  <Image src="/logo.svg" height={400} width={635} alt="logo" />
+                  <Image src="/logo.svg" height={400} width={1000} alt="logo" />
               </a>
           </Link>
 
