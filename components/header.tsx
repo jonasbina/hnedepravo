@@ -24,18 +24,19 @@ const randomText = randomTexts[randomIndex];
 const Header = () => {
   return (
 
-    <div className='w-1/1 content-center'>
-      <Link href="/">
-      <a>
-        <Image src="/logo.svg" height={400} width={1000} alt="logo" />
-        </a>
-        </Link>
+      <div className='w-full mx-auto text-center'>
+          <Link href="/">
+              <a>
+                  <Image src="/logo.svg" height={400} width={1000} alt="logo" />
+              </a>
+          </Link>
 
-        <footer style={{ textAlign: 'center', backgroundColor: 'transparent', color: 'black', padding: '35px', fontSize: '1.6em', fontWeight: "bold"}}>
-            {randomText}
-        </footer>
-    </div>
-    
+          <footer style={{ textAlign: 'center', backgroundColor: 'transparent', color: 'black', padding: '35px', fontSize: '1.6em', fontWeight: "bold"}}>
+              {randomText}
+          </footer>
+      </div>
+
+
   )
 }
 
