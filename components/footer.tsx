@@ -30,7 +30,9 @@ const Footer = () => {
                         </button>
                     ))}
                 </div>
-                <p className="text-sm">Vážíme si Vaší zpětné vazby. Přesně proto žádné hodnocení neukládáme. © Hnědé Právo Media 2023</p>
+                <p className="text-sm">Vážíme si Vaší zpětné vazby. Přesně proto žádné hodnocení neukládáme.
+                    © Hnědé Právo Media 2023
+                </p>
             </div>
         </footer>
     );
