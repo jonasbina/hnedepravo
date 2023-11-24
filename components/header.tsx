@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useTheme } from 'next-themes
 const randomTexts = [
     'Vyčůrej se do mrazáku',
     '"To je tak debilní, miluju to!" - Albert Einstein',
@@ -21,6 +22,7 @@ const randomTexts = [
 
 const randomIndex = Math.floor(Math.random() * randomTexts.length);
 const randomText = randomTexts[randomIndex];
+const { theme } = useTheme()
 const Header = () => {
   return (
 
@@ -31,9 +33,10 @@ const Header = () => {
               </a>
           </Link>
 
-          <footer style={{ textAlign: 'center', backgroundColor: 'transparent', color: 'black', padding: '35px', fontSize: '1.6em', fontWeight: "bold"}}>
+          <footer style={{ textAlign: 'center', backgroundColor: 'transparent', color: theme === 'dark' ? 'white' : 'black', padding: '35px', fontSize: '1.6em', fontWeight: "bold" }}>
               {randomText}
           </footer>
+
       </div>
 
 
