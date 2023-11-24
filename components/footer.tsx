@@ -17,6 +17,11 @@ const Footer = () => {
     return (
         <footer className="p-4 bg-black text-white flex items-center justify-center">
             <div className="flex flex-col items-center text-center">
+
+                <h1 className="mb-4 text-lg">Světlý / tmavý režim</h1>
+
+                <ThemeButton/>
+
                 <h1 className="mb-4 text-lg">Ohodnoť naši stránku!</h1>
                 <div className="flex space-x-2 mb-4">
                     {[...Array(5)].map((_, i) => (
@@ -35,7 +40,6 @@ const Footer = () => {
                     © Hnědé Právo Media 2023
                 </p>
 
-                <ThemeButton/>
             </div>
         </footer>
     );
