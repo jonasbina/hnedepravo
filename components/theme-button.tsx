@@ -1,6 +1,6 @@
 import React from 'react'
 import { useTheme } from "next-themes";
-const Button = () => {
+const ThemeButton = () => {
     const { systemTheme, theme, setTheme } = useTheme();
     const currentTheme = theme === 'system' ? systemTheme : theme;
     return (
@@ -11,4 +11,4 @@ const Button = () => {
         </button>
     )
 }
-export default Button
+export default ThemeButton
