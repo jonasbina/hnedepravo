@@ -29,9 +29,10 @@ const Header = () => {
       <div className='w-full mx-auto text-center'>
           <Link href="/">
               <a>
-                  <Image src="/logo.svg" height={400} width={1000} alt="logo" />
+                <Image src={theme === 'dark' ? '/dark-logo.svg' : '/logo.svg'} height={400} width={1000} alt="logo" />
               </a>
-          </Link>
+           </Link>
+
 
           <footer style={{ textAlign: 'center', backgroundColor: 'transparent', color: theme === 'dark' ? 'white' : 'black', padding: '35px', fontSize: '1.6em', fontWeight: "bold" }}>
               {randomText}
