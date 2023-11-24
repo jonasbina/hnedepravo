@@ -1,6 +1,7 @@
 import Container from './container'
 import { EXAMPLE_PATH } from '../lib/constants'
 import { useState } from 'react';
+import ThemeButton from '../components/theme-button'
 
 const Footer = () => {
     const [rating, setRating] = useState(0);
