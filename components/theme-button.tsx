@@ -3,7 +3,7 @@ import Image from 'next/image'
 import { useTheme } from "next-themes";
 
 const ThemeButton = () => {
-    const { theme, setTheme } = useTheme();
+    const { systemTheme, theme, setTheme } = useTheme();
     const currentTheme = theme === 'system' ? systemTheme : theme;
 
     return (
@@ -15,3 +15,4 @@ const ThemeButton = () => {
     )
 }
 export default ThemeButton
+
