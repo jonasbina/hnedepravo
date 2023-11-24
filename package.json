@@ -17,12 +17,12 @@
     "gray-matter": "^4.0.3",
     "next": "^13.5.3",
     "next-sitemap": "^4.2.3",
+    "next-themes": "^0.2.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "remark": "^14.0.2",
     "remark-html": "^15.0.1",
-    "typescript": "^4.7.4",
-    "next-themes": "^0.2.1"
+    "typescript": "^4.7.4"
   },
   "devDependencies": {
     "@types/node": "^18.0.3",
