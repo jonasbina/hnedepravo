@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useTheme } from 'next-themes
+import { useTheme } from 'next-themes'
 const randomTexts = [
     'Vyčůrej se do mrazáku',
     '"To je tak debilní, miluju to!" - Albert Einstein',
