@@ -24,24 +24,21 @@ const randomIndex = Math.floor(Math.random() * randomTexts.length);
 const randomText = randomTexts[randomIndex];
 const { theme } = useTheme()
 const Header = () => {
-  return (
+ const { theme } = useTheme();
 
-      <div className='w-full mx-auto text-center'>
-          <Link href="/">
-              <a>
-                <Image src={theme === 'dark' ? '/dark-logo.svg' : '/logo.svg'} height={400} width={1000} alt="logo" />
-              </a>
-           </Link>
+ return (
+   <div className='w-full mx-auto text-center'>
+       <Link href="/">
+           <a>
+             <Image src={theme === 'dark' ? '/dark-logo.svg' : '/logo.svg'} height={400} width={1000} alt="logo" />
+           </a>
+        </Link>
 
-
-          <footer style={{ textAlign: 'center', backgroundColor: 'transparent', color: theme === 'dark' ? 'white' : 'black', padding: '35px', fontSize: '1.6em', fontWeight: "bold" }}>
-              {randomText}
-          </footer>
-
-      </div>
-
-
-  )
+       <footer style={{ textAlign: 'center', backgroundColor: 'transparent', color: theme === 'dark' ? 'white' : 'black', padding: '35px', fontSize: '1.6em', fontWeight: "bold" }}>
+           {randomText}
+       </footer>
+   </div>
+ )
 }
 
 export default Header
