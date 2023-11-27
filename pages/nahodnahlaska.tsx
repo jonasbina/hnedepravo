@@ -1,6 +1,5 @@
 import { useState } from 'react';
 import { getAllPosts } from '../lib/api';
-import fs from 'fs';
 import path from 'path';
 import matter from 'gray-matter';
 
