@@ -39,11 +39,11 @@ const Header = () => {
                     <Image src={theme === 'dark' ? '/dark-logo.svg' : '/logo.svg'} height={400} width={1000} alt="logo" />
                 </a>
             </Link>
-            <nav className="mt-4">
-                <Link href="/nahodnahlaska">
-                    <a className="text-blue-500 hover:underline">Generátor náhodných hlášek</a>
-                </Link>
-            </nav>
+            {/*<nav className="mt-4">*/}
+            {/*    <Link href="/nahodnahlaska">*/}
+            {/*        <a className="text-blue-500 hover:underline">Generátor náhodných hlášek</a>*/}
+            {/*    </Link>*/}
+            {/*</nav>*/}
             <footer style={{ textAlign: 'center', backgroundColor: 'transparent', color: theme === 'dark' ? 'white' : 'black', padding: '35px', fontSize: '1.6em', fontWeight: "bold" }}>
                 {randomText}
             </footer>
