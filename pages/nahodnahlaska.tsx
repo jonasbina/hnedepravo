@@ -1,12 +1,16 @@
 import { useState } from 'react';
 import { getAllPosts } from '../lib/api';
+import fs from 'fs';
+import path from 'path';
+import matter from 'gray-matter';
+
 
 const NahodnaHlaska = ({ hlasky }: { hlasky: string[] }) => {
     const [currentHlaska, setCurrentHlaska] = useState<string>(getRandomHlaska());
 
     function getRandomHlaska() {
         const randomIndex = Math.floor(Math.random() * hlasky.length);
-        return hlasky[randomIndex];
+        return getQuotes()[randomIndex];
     }
 
     function handleGenerate() {
@@ -28,15 +32,26 @@ const NahodnaHlaska = ({ hlasky }: { hlasky: string[] }) => {
 };
 
 export default NahodnaHlaska;
+const getQuotes = () => {
+    const postsDirectory = path.join(process.cwd(), '_posts');
+    const filenames = fs.readdirSync(postsDirectory);
+    let allQuotes = [];
 
-export async function getStaticProps() {
-    // Fetch data from your markdown files
-    const posts = getAllPosts(['Hlášky týdne']);
-    const hlasky = posts[0]?.['Hlášky týdne'] || [];
+    filenames.forEach((filename) => {
+        const filePath = path.join(postsDirectory, filename);
+        const fileContents = fs.readFileSync(filePath, 'utf8');
+        const { content } = matter(fileContents);
 
-    return {
-        props: {
-            hlasky,
-        },
-    };
-}
+        const startIndex = content.indexOf('## **Hlášky týdne**');
+        const endIndex = content.indexOf('## **', startIndex + 1);
+        const quotesSection = content.slice(startIndex, endIndex !== -1 ? endIndex : undefined);
+
+        const quoteRegex = /„(.+?)“\s*-\s*(.+)/g;
+        let match;
+        while ((match = quoteRegex.exec(quotesSection)) !== null) {
+            allQuotes.push({ quote: match[1], author: match[2] });
+        }
+    });
+
+    return allQuotes;
+};
