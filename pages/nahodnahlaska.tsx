@@ -2,6 +2,7 @@ import { useState } from 'react';
 import { getAllPosts } from '../lib/api';
 import path from 'path';
 import matter from 'gray-matter';
+import fs from "fs";
 
 
 const NahodnaHlaska = ({ hlasky }: { hlasky: string[] }) => {
