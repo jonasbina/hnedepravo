@@ -10,7 +10,7 @@ const Footer = () => {
     const handleRating = (rate: number) => {
         setRating(rate);
         if (rate < 5) {
-            alert('Ty černokožní individuum, dej tam 5 hvězd!');
+            alert('Ty individuum černé pleti, dej tam 5 hvězd!');
         }
     };
 

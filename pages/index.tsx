@@ -23,7 +23,7 @@ export default function Index({ allPosts }: Props) {
         <Head>
           <meta charSet="utf-8" />
           <meta name="viewport" content="width=device-width, initial-scale=1" />
-          <meta name="description" content="Hnědé Právo: Noviny, které dávají smysl." />
+          <meta name="description" content="Hnědé Právo: Smysluplné zprávy!" />
           <title>Hnědé Právo</title>
         </Head>
 
