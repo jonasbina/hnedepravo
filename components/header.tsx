@@ -40,7 +40,7 @@ const Header = () => {
                 </a>
             </Link>
             <nav className="mt-4">
-                <Link href="/nahodna-hlaska">
+                <Link href="/nahodnahlaska">
                     <a className="text-blue-500 hover:underline">Generátor náhodných hlášek</a>
                 </Link>
             </nav>
