@@ -13,7 +13,7 @@ export const Navbar = () => {
                 <Link href='/'>
                     <a className='inline-flex items-center p-2 mr-4 '>
             <span className='text-xl text-white font-bold uppercase tracking-wide'>
-              Your Logo
+              Hnědé právo
             </span>
                     </a>
                 </Link>
