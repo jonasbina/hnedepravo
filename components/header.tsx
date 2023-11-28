@@ -3,6 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
 import { useState, useEffect } from 'react'
+import {Navbar} from "./navbar";
 
 const randomTexts = [
     'Vyčůrej se do mrazáku',
@@ -37,6 +38,7 @@ const Header = () => {
 
     return (
         <div className='w-full mx-auto text-center'>
+            <Navbar/>
             <Link href="/">
                 <a>
                     <Image src={theme === 'dark' ? '/dark-logo.svg' : '/logo.svg'} height={400} width={1000} alt="logo" />
