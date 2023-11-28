@@ -9,6 +9,7 @@ body {
     body {
         overflow-y: hidden;
     }
+
     .transition-transform {
         transition-property: transform;
     }
