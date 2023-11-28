@@ -37,7 +37,7 @@ const NahodnaHlaska = () => {
                     </blockquote>
 
                     <button
-                        className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none transition-transform transform hover:scale-110"
+                        className="bg-blue-500 text-white py-2 px-4 rounded-md focus:outline-none transition-transform transform hover:scale-110"
                         onClick={regenerateQuote}
                     >
                         Generovat znovu
