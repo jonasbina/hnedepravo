@@ -10,7 +10,6 @@ const DatabazeHlasek = () => {
     const uniqueAuthors = [...new Set(quotesData.map((quote) => quote.author))];
     // @ts-ignore
     const uniqueFiles = [...new Set(quotesData.map((quote) => quote.fileName))];
-
     const filterQuotes = () => {
         let filteredQuotes = quotesData;
 
