@@ -7,8 +7,8 @@ const DatabazeHlasek = () => {
     const [selectedFile, setSelectedFile] = useState('');
 
     const uniqueAuthors = [...new Set(quotesData.map((quote) => quote.author))];
-
     const uniqueFiles = [...new Set(quotesData.map((quote) => quote.fileName))];
+
     const filterQuotes = () => {
         let filteredQuotes = quotesData;
 
@@ -24,51 +24,55 @@ const DatabazeHlasek = () => {
     };
 
     return (
-        <div>
+        <div className="max-w-4xl mx-auto p-4">
             <h1 className="text-4xl font-bold mb-4 text-blue-600">Databáze Hlášek</h1>
 
-            <div>
-                <label htmlFor="authorSelect" className="mr-2">
-                    Autor:
-                </label>
-                <select
-                    id="authorSelect"
-                    onChange={(e) => setSelectedAuthor(e.target.value)}
-                    value={selectedAuthor}
-                >
-                    <option value="">Všechny</option>
-                    {uniqueAuthors.map((author) => (
-                        <option key={author} value={author}>
-                            {author}
-                        </option>
-                    ))}
-                </select>
+            <div className="flex space-x-4 mb-4">
+                <div>
+                    <label htmlFor="authorSelect" className="block text-sm font-medium text-gray-700">
+                        Autor:
+                    </label>
+                    <select
+                        id="authorSelect"
+                        onChange={(e) => setSelectedAuthor(e.target.value)}
+                        value={selectedAuthor}
+                        className="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
+                    >
+                        <option value="">Všechny</option>
+                        {uniqueAuthors.map((author) => (
+                            <option key={author} value={author}>
+                                {author}
+                            </option>
+                        ))}
+                    </select>
+                </div>
+
+                <div>
+                    <label htmlFor="fileSelect" className="block text-sm font-medium text-gray-700">
+                        Soubor:
+                    </label>
+                    <select
+                        id="fileSelect"
+                        onChange={(e) => setSelectedFile(e.target.value)}
+                        value={selectedFile}
+                        className="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
+                    >
+                        <option value="">Všechny</option>
+                        {uniqueFiles.map((file) => (
+                            <option key={file} value={file}>
+                                {file}
+                            </option>
+                        ))}
+                    </select>
+                </div>
             </div>
 
-            <div className="mt-2">
-                <label htmlFor="fileSelect" className="mr-2">
-                    Soubor:
-                </label>
-                <select
-                    id="fileSelect"
-                    onChange={(e) => setSelectedFile(e.target.value)}
-                    value={selectedFile}
-                >
-                    <option value="">Všechny</option>
-                    {uniqueFiles.map((file) => (
-                        <option key={file} value={file}>
-                            {file}
-                        </option>
-                    ))}
-                </select>
-            </div>
-
-            <div className="mt-4">
+            <div className="grid gap-4">
                 {filterQuotes().map((quote, index) => (
-                    <div key={index} className="mb-4">
+                    <div key={index} className="bg-gray-100 p-4 rounded-md shadow-md">
                         <blockquote className="text-lg italic text-gray-700">
-                            "{quote.quote}"
-                            <footer className="text-right text-gray-500">- {quote.author}</footer>
+                            {quote.quote}
+                            <footer className="text-right text-gray-500 mt-2">- {quote.author}</footer>
                         </blockquote>
                         <p className="mt-2">
                             <a href={`/posts/${quote.fileName.replace('.md', '')}`} className="text-blue-500 hover:underline">
