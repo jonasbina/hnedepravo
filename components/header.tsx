@@ -38,7 +38,7 @@ const Header = () => {
 
     return (
         <div className='w-full mx-auto text-center'>
-            <Navbar/>
+            {/*<Navbar/>*/}
             <Link href="/">
                 <a>
                     <Image src={theme === 'dark' ? '/dark-logo.svg' : '/logo.svg'} height={400} width={1000} alt="logo" />
