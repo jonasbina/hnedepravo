@@ -27,31 +27,31 @@ svými vazbami na Elona Muska, kterému ukradl z účtu přes 10 Kč.*
 
 „Proč zná*ilňuješ moji botu ve sklepě?!“
 
- - Jony
+- Jony
 
 „Vypadá to jako auto“
 
- - Adam když buchta
+- Adam když buchta
 
 „Rudé moře je.......... Moře.“
 
- - Pan učitel Bechyně
+- Pan učitel Bechyně
 
 „Já, kdybych měl kanál... Tak vlastě ani nevim.“
 
- - Adam
+- Adam
 
 „A až mě pan učitel zabije, tak já zabiju tebe“
 
- - Paní učitelka Lakomá na Kvida
+- Paní učitelka Lakomá na Kvida
 
 „Tak to mi ho ukaž.“
 
- - Paní učitelka Kocmanová
+- Paní učitelka Kocmanová
 
 „Holky nezastavíš.“
 
- - Adam
+- Adam
 
 
 ## **Speciální zpravodajství z Přibyslavi:**

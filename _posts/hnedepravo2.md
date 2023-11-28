@@ -78,11 +78,11 @@ Dav: „Neeee, vyhraje KOMUNISMUSSSSSSS“ \*vyženou Sáru ze studia\*
 
 ## Hlášky týdne: 
 
-Ono to dělá víc nahlas, podle toho, v jaký je to poloze. 
+„Ono to dělá víc nahlas, podle toho, v jaký je to poloze.“ 
 
 -Adam 
 
-Velká tělocvična je velká. 
+„Velká tělocvična je velká.“
 
 -Pan učitel Richtr
 

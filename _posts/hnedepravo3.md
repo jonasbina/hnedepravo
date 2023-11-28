@@ -59,27 +59,27 @@ Verze Jonáše Hlíny: „Já jsem si tam prostě stál a čiloval se svojí kom
 
 
 
-Já mám Kryštofa ráda, když mi přineseš bábovku, tak tě taky budu mít ráda. 
+„Já mám Kryštofa ráda, když mi přineseš bábovku, tak tě taky budu mít ráda.“ 
 
 -Paní učitelka Lakomá
 
 
-Já jsem malá mobilní zahrádka.
+„Já jsem malá mobilní zahrádka.“
 
 -Štefan
 
 
-Pomoc, Peca mi olíznul rohlík!
+„Pomoc, Peca mi olíznul rohlík!“
 
 -Jony
 
 
-Hej vole, hraješ vysokou nohou!
+„Hej vole, hraješ vysokou nohou!“
 
 -Kryštof na Ondru při fotbalovém zápasu
 
 
-Já ti zaktualizuju zasedací pořádek.
+„Já ti zaktualizuju zasedací pořádek.“
 
 -Pan učitel Bechyně
 
