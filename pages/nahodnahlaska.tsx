@@ -1,32 +1,38 @@
 import { useState } from 'react';
-import { getAllPosts } from '../lib/api';
-import path from 'path';
-import matter from 'gray-matter';
-import fs from "fs";
+import quotesData from '../public/quotes.json';
 
+const getRandomQuote = (quotes) => {
+    const randomIndex = Math.floor(Math.random() * quotes.length);
+    return quotes[randomIndex];
+};
 
-const NahodnaHlaska = ({ hlasky }: { hlasky: string[] }) => {
-    // const [currentHlaska, setCurrentHlaska] = useState<string>(getRandomHlaska());
+const NahodnaHlaska = () => {
+    const [currentQuote, setCurrentQuote] = useState(getRandomQuote(quotesData));
 
-    // function getRandomHlaska() {
-    //     const randomIndex = Math.floor(Math.random() * hlasky.length);
-    //     return getQuotes()[randomIndex];
-    // }
-    //
-    // function handleGenerate() {
-    //     setCurrentHlaska(getRandomHlaska());
-    // }
+    const regenerateQuote = () => {
+        setCurrentQuote(getRandomQuote(quotesData));
+    };
 
     return (
-        <div>
-            <h1 className="text-3xl font-bold mb-4">Nevím jak si to našel, každopádně tahle stránka zatím nefunguje :(</h1>
-            <p className="text-lg">{}</p>
-            <button
-                className="bg-blue-500 text-white px-4 py-2 mt-4 rounded"
-                // onClick={}
-            >
-                Zbytečné tlačítko
-            </button>
+        <div className="min-h-screen flex flex-col justify-center items-center">
+            <div className="max-w-md p-4 bg-gray-200 rounded-md">
+                <h1 className="text-2xl font-bold mb-4">Random Quote</h1>
+                <blockquote className="italic text-gray-700">
+                    "{currentQuote.Quote}"
+                    <footer className="text-right text-gray-500">- {currentQuote.Author}</footer>
+                </blockquote>
+                <button
+                    className="mt-4 bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none"
+                    onClick={regenerateQuote}
+                >
+                    Regenerate
+                </button>
+                <p className="mt-2">
+                    <a href={`/posts/${currentQuote.Filename.replace('.md', '')}`} className="text-blue-500 hover:underline">
+                        View original post
+                    </a>
+                </p>
+            </div>
         </div>
     );
 };

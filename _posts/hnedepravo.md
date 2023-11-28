@@ -33,7 +33,7 @@ Kryštof: Neshledanou.
 
 -Kryštof poté co uviděl Jonyho 
 
-„Jsem byl na adapťáku, a bolí mě potom tady takhle.“ (ukazuje si na zadek) 
+„Jsem byl na adapťáku, a bolí mě potom tady takhle. *ukazuje si na zadek*“ 
 
 -Pan učitel Novák při první hodině fyziky 
 
