@@ -17,7 +17,7 @@ export const Navbar = () => {
                 </a>
             </Link>
             <button
-                className=' inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
+                className='inline-flex p-3 hover:bg-green-600 rounded lg:hidden text-white ml-auto hover:text-white outline-none'
                 onClick={handleClick}
             >
                 {/* Add your icon here */}
@@ -25,7 +25,7 @@ export const Navbar = () => {
             <div
                 className={`${
                     active ? 'block' : 'hidden'
-                } lg:hidden w-full lg:inline-flex lg:flex-grow lg:w-auto`}
+                } lg:inline-flex w-full lg:flex-grow lg:w-auto`}
             >
                 <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start  flex flex-col lg:h-auto'>
                     <Link href='/'>
