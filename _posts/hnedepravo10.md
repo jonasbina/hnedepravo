@@ -15,7 +15,7 @@ Bylo zrovna 6.10. když se konalo taneční vystoupení tercie na Václavském
 náměstí. Nejvýraznější tanečnicí a tanečníkem byla Kateřina Zarostlá a
 Kryštof Palmovský. Tito dva ochromili celou Prahu svými schopnostmi.
 
-„Bylo to úžasné, až k nám přijede Pruský prezident, určitě je pozvu na hrad.“
+,,Bylo to úžasné, až k nám přijede Pruský prezident, určitě je pozvu na hrad."
 
 Říká prezident Petr Pavel. Kromě představitelů vlády zde bylo i pár opilců,
 s jedním se nám povedlo udělat rozhovor.
