@@ -25,7 +25,7 @@ const NahodnaHlaska = () => {
             <div className={`max-w-md p-8 bg-gray-200 rounded-md shadow-lg transition-transform transform hover:scale-105 ${regenerateAnimation ? 'animate-fade-in' : ''}`}>
                 <blockquote className="text-xl italic text-gray-700 mb-6">
                     "{currentQuote.quote}"
-                    <footer className="text-right text-gray-500">- {currentQuote.author}</footer>
+                    <footer className="text-right text-gray-500">{currentQuote.author}</footer>
                 </blockquote>
                 <button
                     className="bg-blue-500 text-white py-2 px-4 rounded-md hover:bg-blue-600 focus:outline-none transition-transform transform hover:scale-105"
