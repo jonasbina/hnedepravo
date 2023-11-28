@@ -28,17 +28,17 @@ export const Navbar = () => {
             <div className={`lg:inline-flex w-full lg:flex-grow lg:w-auto ${active ? 'block' : 'hidden'}`}>
                 <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
                     <Link href='/'>
-                        <a className='lg:inline-flex w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                        <a className='lg:inline-flex w-full lg:w-auto px-3 py-2 rounded font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
                             Hlavní stránka
                         </a>
                     </Link>
                     <Link href='/databaze-hlasek'>
-                        <a className='lg:inline-flex w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                        <a className='lg:inline-flex w-full lg:w-auto px-3 py-2 rounded font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
                             Databáze hlášek
                         </a>
                     </Link>
                     <Link href='/nahodna-hlaska'>
-                        <a className='lg:inline-flex w-full px-3 py-2 rounded font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                        <a className='lg:inline-flex w-full lg:w-auto px-3 py-2 rounded font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
                             Generátor náhodných hlášek
                         </a>
                     </Link>
@@ -47,9 +47,8 @@ export const Navbar = () => {
             </div>
 
             <div className='ml-auto'>
-                <ThemeButton/>
+                <ThemeButton />
             </div>
         </nav>
     );
 };
-
