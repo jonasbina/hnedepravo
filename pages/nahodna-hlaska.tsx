@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import quotesData from '../public/quotes.json';
+import {Navbar} from "../components/navbar";
 
 const getRandomQuote = (quotes) => {
     const randomIndex = Math.floor(Math.random() * quotes.length);
@@ -19,7 +20,9 @@ const NahodnaHlaska = () => {
     };
 
     return (
+
         <div className="min-h-screen flex flex-col justify-center items-center">
+            <Navbar/>
             <h1 className="text-4xl font-bold mb-4 text-blue-600">Generátor Hlášek</h1>
 
             <div className={`max-w-md p-8 bg-gray-200 rounded-md shadow-lg transition-transform transform hover:scale-105 ${regenerateAnimation ? 'animate-fade-in' : ''}`}>

@@ -1,6 +1,7 @@
 // DatabazeHlasek.js
 import React, { useState } from 'react';
 import quotesData from '../public/quotes.json';
+import {Navbar} from "../components/navbar";
 
 const DatabazeHlasek = () => {
     const [selectedAuthor, setSelectedAuthor] = useState('');
@@ -25,6 +26,7 @@ const DatabazeHlasek = () => {
 
     return (
         <div className="max-w-4xl mx-auto p-4">
+            <Navbar/>
             <h1 className="text-4xl font-bold mb-4 text-blue-600">Databáze Hlášek</h1>
 
             <div className="flex space-x-4 mb-4">
