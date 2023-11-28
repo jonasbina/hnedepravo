@@ -17,11 +17,11 @@ const Footer = () => {
     return (
         <footer className="p-4 bg-black text-white flex items-center justify-center">
             <div className="flex flex-col items-center text-center">
-                <h1 className="mb-4 text-lg">Další části stránky</h1>
-                <a href={"/nahodna-hlaska"}>Generátor náhodných hlášek</a>
-                <a href={"/databaze-hlasek"}>Databáze hlášek</a>
+                <h1 className="mb-4 text-lg font-bold">Další části stránky</h1>
+                <a className={"text-sm"} href={"/nahodna-hlaska"}>Generátor náhodných hlášek</a>
+                <a className={"text-sm"} href={"/databaze-hlasek"}>Databáze hlášek</a>
                 <a></a>
-                <h1 className="mb-4 text-lg">Ohodnoť naši stránku!</h1>
+                <h1 className="mb-4 text-lg font-bold">Ohodnoť naši stránku!</h1>
                 <div className="flex space-x-2 mb-4">
                     {[...Array(5)].map((_, i) => (
                         <button
