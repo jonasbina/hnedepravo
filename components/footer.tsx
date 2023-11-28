@@ -17,6 +17,8 @@ const Footer = () => {
     return (
         <footer className="p-4 bg-black text-white flex items-center justify-center">
             <div className="flex flex-col items-center text-center">
+                <a href={"/nahodna-hlaska"}>Generátor náhodných hlášek</a>
+                <a href={"/databaze-hlasek"}>Databáze hlášek</a>
                 <h1 className="mb-4 text-lg">Ohodnoť naši stránku!</h1>
                 <div className="flex space-x-2 mb-4">
                     {[...Array(5)].map((_, i) => (
