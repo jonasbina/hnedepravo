@@ -3,7 +3,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { useTheme } from 'next-themes'
 import { useState, useEffect } from 'react'
-import Sidebar from './Sidebar';
+import Sidebar from './sidebar';
 
 const randomTexts = [
     'Vyčůrej se do mrazáku',
