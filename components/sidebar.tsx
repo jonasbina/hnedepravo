@@ -1,36 +1,65 @@
-import Link from 'next/link';
-import { useTheme } from 'next-themes';
+// @/components/Layout/Sidebar.js
+import React, { useState, useEffect } from 'react'
+import Link from 'next/link'
+import { useRouter } from 'next/router'
 
-const Sidebar = ({ isOpen, onClose }) => {
-    const { theme } = useTheme();
+export default function Sidebar({ show, setter }) {
+    const router = useRouter();
+
+    // Define our base class
+    const className = "bg-black w-[250px] transition-[margin-left] ease-in-out duration-500 fixed md:static top-0 bottom-0 left-0 z-40";
+    // Append class based on state of sidebar visiblity
+    const appendClass = show ? " ml-0" : " ml-[-250px] md:ml-0";
+
+    // Clickable menu items
+    const MenuItem = ({ name, route }) => {
+        // Highlight menu item based on currently displayed route
+        const colorClass = router.pathname === route ? "text-white" : "text-white/50 hover:text-white";
+
+        return (
+            <Link
+                href={route}
+                onClick={() => {
+                    setter(oldVal => !oldVal);
+                }}
+                className={`flex gap-1 [&>*]:my-auto text-md pl-6 py-3 border-b-[1px] border-b-white/10 ${colorClass}`}
+            >
+
+                <div>{name}</div>
+            </Link>
+        )
+    }
+
+    // Overlay to prevent clicks in background, also serves as our close button
+    const ModalOverlay = () => (
+        <div
+            className={`flex md:hidden fixed top-0 right-0 bottom-0 left-0 bg-black/50 z-30`}
+            onClick={() => {
+                setter(oldVal => !oldVal);
+            }}
+        />
+    )
 
     return (
-        <div
-            className={`lg:hidden fixed top-0 left-0 bottom-0 z-50 w-64 overflow-y-auto bg-white transition-transform duration-300 transform ${
-                isOpen ? 'translate-x-0' : '-translate-x-full'
-            }`}
-        >
-            <nav className="p-4">
-                <ul>
-                    <li>
-                        <Link href="/">
-                            <a onClick={onClose} className="block py-2 text-gray-700 hover:bg-gray-100">
-                                Home
-                            </a>
-                        </Link>
-                    </li>
-                    <li>
-                        <Link href="/databaze-hlasek">
-                            <a onClick={onClose} className="block py-2 text-gray-700 hover:bg-gray-100">
-                                Databaze Hlasek
-                            </a>
-                        </Link>
-                    </li>
-                    {/* Add other navigation links here */}
-                </ul>
-            </nav>
-        </div>
-    );
-};
+        <>
+            <div className={`${className}${appendClass}`}>
+                <div className="flex flex-col">
+                    <MenuItem
+                        name="Hlavní stránka"
+                        route="/"
+                    />
+                    <MenuItem
+                        name="Generátor náhodných hlášek"
+                        route="/nahodna-hlaska"
+                    />
+                    <MenuItem
+                        name="Databáze hlášek"
+                        route="/databaze-hlasek"
+                    />
 
-export default Sidebar;
+                </div>
+            </div>
+            {show ? <ModalOverlay /> : <></>}
+        </>
+    )
+}
