@@ -72,7 +72,7 @@ const DatabazeHlasek = () => {
                     <div key={index} className="bg-gray-100 p-4 rounded-md shadow-md">
                         <blockquote className="text-lg italic text-gray-700">
                             {quote.quote}
-                            <footer className="text-right text-gray-500 mt-2">- {quote.author}</footer>
+                            <footer className="text-right text-gray-500 mt-2">{quote.author}</footer>
                         </blockquote>
                         <p className="mt-2">
                             <a href={`/posts/${quote.fileName.replace('.md', '')}`} className="text-blue-500 hover:underline">
