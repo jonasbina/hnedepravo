@@ -22,7 +22,7 @@ const NahodnaHlaska = () => {
 
     return (
         <div className="min-h-screen">
-            <Header/>
+            <Navbar/>
         <div className="min-h-screen flex flex-col justify-center items-center">
             <h1 className="text-4xl font-bold mb-4 text-blue-600">Generátor Hlášek</h1>
 
