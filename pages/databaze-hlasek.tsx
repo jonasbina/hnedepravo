@@ -6,9 +6,8 @@ const DatabazeHlasek = () => {
     const [selectedAuthor, setSelectedAuthor] = useState('');
     const [selectedFile, setSelectedFile] = useState('');
 
-    // @ts-ignore
     const uniqueAuthors = [...new Set(quotesData.map((quote) => quote.author))];
-    // @ts-ignore
+
     const uniqueFiles = [...new Set(quotesData.map((quote) => quote.fileName))];
     const filterQuotes = () => {
         let filteredQuotes = quotesData;
