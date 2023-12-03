@@ -2,7 +2,7 @@
 title: 'Nová ústava: Šárka má mouchu v ...'
 excerpt: '13. díl Hnědého práva'
 coverImage: '/13.png'
-date: '2023-12-4T07:00:00.000Z'
+date: '2023-12-04T07:00:00.000Z'
 author:
   name: Tomáš Bouchal
   picture: '/assets/blog/authors/tb.jpg'
