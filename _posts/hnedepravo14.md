@@ -1,5 +1,5 @@
 ---
-title: 'Nová ústava: Šárka má mouchu v ...'
+title: 'Krasobruslař Párek za vraždění dostal Řád Černého Lva!'
 excerpt: '14. díl Hnědého práva'
 coverImage: '/14.png'
 date: '2023-12-11T07:00:00.000Z'
