@@ -38,7 +38,7 @@ bílá, černá, zelená a samozřejmě bojově helikoptérová.*
 
 - Kryštof když bambus
 
-Nehledě na to, že když takhle lezeš pod Bártovou, tak to vypadá divně.
+„Nehledě na to, že když takhle lezeš pod Bártovou, tak to vypadá divně.“
 
 - Pan učitel Bechyně na Cecu lezícího k Lojzíkovi
 
