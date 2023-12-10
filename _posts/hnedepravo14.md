@@ -1,5 +1,5 @@
 ---
-title: 'Krasobruslař Párek za vraždění dostal Řád Černého Lva!'
+title: 'Krasobruslař Párek dostal za vraždění Řád Černého Lva!'
 excerpt: '14. díl Hnědého práva'
 coverImage: '/14.png'
 date: '2023-12-11T07:00:00.000Z'
