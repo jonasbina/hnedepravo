@@ -57,6 +57,11 @@ reakce ve chvíli co v kebabu pozřel kyselou okurku. Pachatelem je 34letý
 bratr přibyslavana z minulého dílu (toho co řekl "je to v hajzlu"). Pachatel byl
 zatčen a odsouzen k 69 letům vězení za otrávení.
 
+- Štefan Satan
+
+![Alt text](../ilufot15.png)
+*Ilustrační foto - Zdroj Olga Satanová*
+
 ## **Moudro týdne:**
 
 Lepší tvůj pták v ruce než cizí v p*deli.
