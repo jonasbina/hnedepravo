@@ -52,22 +52,22 @@ zajímavý a bude tlačit na Mirku, aby ho prosadil.
 
 „Vidíš, musíš stříkat na lidi.“
 
-- Lol
+- Jony
 
 „A tyhle mají rádi trojku.“
 
 - Paní učitelka Lišková
 
-"Nebudu mít mobil, a když nebudu mít mobil tak nebudu mít ruku, a když
-nebudu mít ruku tak nebudu žít!"
+„Nebudu mít mobil, a když nebudu mít mobil tak nebudu mít ruku, a když
+nebudu mít ruku tak nebudu žít!“
 
 - Nela
 
-"Tys zvracela lepidlo?“
+„Tys zvracela lepidlo?“
 
 - Pan učitel Bechyně
 
-"Já bych nomohl kdyby tam byl Ivan. Já bych ho zmlátil."
+„Já bych nomohl kdyby tam byl Ivan. Já bych ho zmlátil.“
 
 - Adam
 
@@ -84,7 +84,7 @@ Před týdnem jsme s panem Bechyněm vyzkoušeli na přibyslavanech sociální e
 
 ## الضروري مقاطعة بحق .من المنتصر كانتا حدى لابً نا بأيدي ناّبإ بحشد ,بـ ً^ اديدج أعمال
 
-## **وفرنسا هناك حيث عن ,ثم البولنديً**
+## وفرنسا هناك حيث عن ,ثم البولنديً
 
 ## **Fakt týdne:**
 
