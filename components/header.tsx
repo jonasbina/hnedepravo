@@ -41,7 +41,7 @@ const Header = () => {
             <Navbar/>
             <Link href="/">
                 <a>
-                    <Image src={theme === 'dark' ? '/vanoce-dark.svg' : '/vanoce.svg'} height={400} width={1000} alt="logo" />
+                    <Image src={theme === 'dark' ? '/dark-logo.svg' : '/logo.svg'} height={400} width={1000} alt="logo" />
                 </a>
             </Link>
             <footer style={{ textAlign: 'center', backgroundColor: 'transparent', color: theme === 'dark' ? 'white' : 'black', padding: '35px', fontSize: '1.6em', fontWeight: "bold" }}>
