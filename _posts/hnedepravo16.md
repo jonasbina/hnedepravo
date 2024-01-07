@@ -2,7 +2,7 @@
 title: 'Štefanismus; hrozba nebo geniálně skryté potlačování lidských práv?'
 excerpt: '1. díl Hnědého práva'
 coverImage: '/16.jpeg'
-date: '2024-01-07T07:00:00.000Z'
+date: '2024-01-08T07:00:00.000Z'
 author:
     name: Tomáš Bouchal
     picture: '/assets/blog/authors/tb.jpg'
