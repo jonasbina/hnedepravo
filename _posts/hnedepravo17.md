@@ -2,7 +2,7 @@
 title: 'Porno: Jak se Sára Suzuki dostala až na dno?'
 excerpt: '17. díl Hnědého práva'
 coverImage: '/17.jpeg'
-date: '2024-01-015T07:00:00.000Z'
+date: '2024-01-15T07:00:00.000Z'
 author:
     name: Tomáš Bouchal
     picture: '/assets/blog/authors/tb.jpg'
