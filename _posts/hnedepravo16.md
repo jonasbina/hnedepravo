@@ -1,6 +1,6 @@
 ---
 title: 'Štefanismus; hrozba nebo geniálně skryté potlačování lidských práv?'
-excerpt: '1. díl Hnědého práva'
+excerpt: '16. díl Hnědého práva'
 coverImage: '/16.jpeg'
 date: '2024-01-08T07:00:00.000Z'
 author:
