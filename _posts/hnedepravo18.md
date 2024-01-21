@@ -10,7 +10,7 @@ ogImage:
     url: '/18.jpeg'
 ---
 
-*Tento článek sponzoruje ["Meh a Pak](https://www.mehtech.vercel.app)  – Neomezené možnosti a fascinující zábava v jednom*
+*Tento článek sponzoruje [Meh a Pak](https://www.mehtech.vercel.app)  – Neomezené možnosti a fascinující zábava v jednom*
 
 ## **Události a komentáře:**
 
