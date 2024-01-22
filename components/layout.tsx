@@ -1,7 +1,5 @@
-import Alert from './alert'
 import Footer from './footer'
 import Meta from './meta'
-import {useState} from "react";
 type Props = {
   preview?: boolean
   children: React.ReactNode
