@@ -16,7 +16,7 @@ export const Navbar = () => {
     };
 
     return (
-        <nav className={`flex items-center flex-wrap p-3 ${active ? 'bg-green-400' : 'bg-gray-900'}`}>
+        <nav className={`flex items-center flex-wrap p-3 ${active ? 'bg-green-400' : theme==="light" ? 'bg-gray-50' : 'bg-gray-900'}`}>
             <Link href='/'>
                 <a className='inline-flex items-center p-2 mr-4'>
                     <span className={`text-xl font-bold uppercase tracking-wide ${active ? 'text-white' : 'text-gray-300'}`}>
