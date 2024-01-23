@@ -1,8 +1,8 @@
 import Head from 'next/head'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useTheme } from 'next-themes'
-import { useState, useEffect } from 'react'
+import {useTheme} from 'next-themes'
+import {useState, useEffect} from 'react'
 import {Navbar} from "./navbar";
 
 const randomTexts = [
@@ -24,8 +24,7 @@ const randomIndex = Math.floor(Math.random() * randomTexts.length);
 const randomText = randomTexts[randomIndex];
 const Header = () => {
     const [mounted, setMounted] = useState(false);
-    const { theme } = useTheme();
-
+    const {theme} = useTheme();
 
 
     // After mounting, we have access to the theme
@@ -36,12 +35,22 @@ const Header = () => {
     return (
         <div className='w-full mx-auto text-center'>
             <Navbar/>
-            <Link href="/">
-                <a>
-                    <Image src={theme === 'light' ? '/logo.svg': '/dark-logo.svg'} height={400} width={1000} alt="logo" />
-                </a>
-            </Link>
-            <footer style={{ textAlign: 'center', backgroundColor: 'transparent', color: theme === 'light' ? 'black' : 'white', padding: '35px', fontSize: '1.6em', fontWeight: "bold" }}>
+            <div className={"max-w-full flex justify-center"}>
+                <Link href="/">
+                    <a>
+                        <Image src={theme === 'light' ? '/logo.svg' : '/dark-logo.svg'} height={400} width={1000}
+                               alt="logo"/>
+                    </a>
+                </Link>
+            </div>
+            <footer style={{
+                textAlign: 'center',
+                backgroundColor: 'transparent',
+                color: theme === 'light' ? 'black' : 'white',
+                padding: '35px',
+                fontSize: '1.6em',
+                fontWeight: "bold"
+            }}>
                 {randomText}
             </footer>
         </div>
