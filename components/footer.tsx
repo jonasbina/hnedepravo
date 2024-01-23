@@ -17,6 +17,7 @@ const Footer = () => {
                 <h1 className="mb-4 text-lg font-bold">Další části stránky</h1>
                 <a className={"text-sm hover:text-blue-900"} href={"/nahodna-hlaska"}>Generátor náhodných hlášek</a>
                 <a className={"text-sm hover:text-blue-900"} href={"/databaze-hlasek"}>Databáze hlášek</a>
+                <a className={"text-sm hover:text-blue-900"} href={"/legal"}>Legal notice</a>
                 <a></a>
                 <h1 className="mb-4 text-lg font-bold">Ohodnoť naši stránku!</h1>
                 <div className="flex space-x-2 mb-4">
