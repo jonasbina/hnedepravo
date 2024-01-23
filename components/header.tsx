@@ -6,21 +6,18 @@ import { useState, useEffect } from 'react'
 import {Navbar} from "./navbar";
 
 const randomTexts = [
-    'Vyčůrej se do mrazáku',
-    '"To je tak debilní, miluju to!" - Albert Einstein',
-    'Čte to vůbec někdo?',
     'Pullni ten trigger a bude z tebe n-',
-    'Ahoj, je mi Jarda, jmenuji se jednačtyřicet a jsem youtuber!',
+    'Ahoj, je mi Jarda, jmenuji se  youtuber a jsem jednačtyřicet!',
     'Dex dex dex -',
-    'Věděli jste, že pokud přijdete o obě nohy, nebudete už moct chodit?',
-    'JAKEJ ŠTEFAN? Však to je Elvis Presley!',
-    'JAKEJ ŠTEFAN? Však to je Elvis Presley!',
-    'JAKEJ ŠTEFAN? Však to je Elvis Presley!',
-    'JAKEJ ŠTEFAN? Však to je Elvis Presley!',
-    'Věděli jste, že jste nevěděli?',
-    'Bagr je v podstatě traktor, který umí bagrovat.',
-    'Nikdo nic neviděl',
     'Ondřeji prosím!',
+    'Ty mi piješ můj Müllermilch?!?!',
+    'Medpakvprcmech.',
+    'Já jsem ričrd niksn!',
+    'Hugo hihihi',
+    'Štefan je náš král a spasitel lidstva.',
+    'Heil Štefan.',
+    'řechcem',
+    'Hamás? More like Ham ass xdd (tohle radši ne xd)'
 ];
 
 const randomIndex = Math.floor(Math.random() * randomTexts.length);
@@ -41,10 +38,10 @@ const Header = () => {
             <Navbar/>
             <Link href="/">
                 <a>
-                    <Image src={theme === 'dark' ? '/dark-logo.svg' : '/logo.svg'} height={400} width={1000} alt="logo" />
+                    <Image src={theme === 'light' ? '/logo.svg': '/dark-logo.svg'} height={400} width={1000} alt="logo" />
                 </a>
             </Link>
-            <footer style={{ textAlign: 'center', backgroundColor: 'transparent', color: theme === 'dark' ? 'white' : 'black', padding: '35px', fontSize: '1.6em', fontWeight: "bold" }}>
+            <footer style={{ textAlign: 'center', backgroundColor: 'transparent', color: theme === 'light' ? 'black' : 'white', padding: '35px', fontSize: '1.6em', fontWeight: "bold" }}>
                 {randomText}
             </footer>
         </div>
