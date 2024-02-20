@@ -26,7 +26,7 @@ export default function Index({ allPosts }: Props) {
     const closePopup = () => {
         if (clickCount ===  0) {
             // Move the button to a random position within the popup on the first click
-            const popup = closeButtonRef.current.parentElement;
+            const popup = closeButtonRef.current.parentElement.parentElement.parentElement.parentElement;
             const popupRect = popup.getBoundingClientRect();
             const buttonRect = closeButtonRef.current.getBoundingClientRect();
             const newX = Math.floor(Math.random() * (popupRect.width - buttonRect.width));
@@ -34,12 +34,12 @@ export default function Index({ allPosts }: Props) {
             closeButtonRef.current.style.transform = `translate(${newX}px, ${newY}px)`;
             setClickCount(clickCount +  1);
         } else {
-            // On subsequent clicks, with a  /*33%*/ 10% chance, close the popup, else move the button
+            // On subsequent clicks, with a  /*33% 10% chance, close the popup, else move the button
             if (Math.random() <  0.1) {
                 setShowPopup(false);
             } else {
                 // Move the button to a random position within the popup
-                const popup = closeButtonRef.current.parentElement;
+                const popup = closeButtonRef.current.parentElement.parentElement.parentElement.parentElement;
                 const popupRect = popup.getBoundingClientRect();
                 const buttonRect = closeButtonRef.current.getBoundingClientRect();
                 const newX = Math.floor(Math.random() * (popupRect.width - buttonRect.width));
