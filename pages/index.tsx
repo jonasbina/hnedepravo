@@ -21,18 +21,6 @@ export default function Index({ allPosts }: Props) {
         setShowPopup(false);
     };
     const closeButtonRef = useRef(null);
-    useEffect(() => {
-        const moveButton = (e) => {
-            const rect = closeButtonRef.current.getBoundingClientRect();
-            const x = e.clientX - rect.left - rect.width /  2;
-            const y = e.clientY - rect.top - rect.height /  2;
-            closeButtonRef.current.style.transform = `translate(${x}px, ${y}px)`;
-        };
-        window.addEventListener('mousemove', moveButton);
-        return () => {
-            window.removeEventListener('mousemove', moveButton);
-        };
-    }, []);
   const morePosts = allPosts.slice(1)
   return (
     <>
