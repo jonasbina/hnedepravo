@@ -28,7 +28,7 @@ export default function Index({allPosts}: Props) {
     const imageSource = randomNumber < 0.5 ? "/plakat.png" : "/plakat2.png";
     const closePopup = () => {
         if (clickCount === 0) {
-            const popup = closeButtonRef.current.parentElement.parentElement.parentElement.parentElement;
+            const popup = closeButtonRef.current.parentElement.parentElement.parentElement;
             const popupRect = popup.getBoundingClientRect();
             const buttonRect = closeButtonRef.current.getBoundingClientRect();
             let maxX = popupRect.width - buttonRect.width*2;
