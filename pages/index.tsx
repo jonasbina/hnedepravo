@@ -34,8 +34,8 @@ export default function Index({allPosts}: Props) {
             const buttonRect = closeButtonRef.current.getBoundingClientRect();
             const maxX = popupRect.width - buttonRect.width;
             const maxY = popupRect.height - buttonRect.height;
-            const newX = Math.floor(Math.random() * maxX);
-            const newY = Math.floor(Math.random() * maxY);
+            const newX = Math.floor(Math.random() * maxX) - buttonRect.left;
+            const newY = Math.floor(Math.random() * maxY) - buttonRect.top;
             closeButtonRef.current.style.transform = `translate(${newX}px, ${newY}px)`;
             setClickCount(clickCount + 1);
         } else {
@@ -55,6 +55,7 @@ export default function Index({allPosts}: Props) {
             }
         }
     };
+
 
 
     // Animate the button's movement
