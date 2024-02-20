@@ -9,19 +9,52 @@ import Post from '../interfaces/post'
 import Header from '../components/header'
 import { Analytics } from '@vercel/analytics/react';
 import {useState, useEffect, useRef} from 'react';
+import { motion } from 'framer-motion';
 
 type Props = {
   allPosts: Post[]
 }
 
+
 export default function Index({ allPosts }: Props) {
     const [showPopup, setShowPopup] = useState(true);
+    const [clickCount, setClickCount] = useState(0);
     const heroPost = allPosts[0]
-    const closePopup = () => {
-        setShowPopup(false);
-    };
     const closeButtonRef = useRef(null);
-  const morePosts = allPosts.slice(1)
+    const morePosts = allPosts.slice(1)
+
+    const closePopup = () => {
+        if (clickCount ===  0) {
+            // Move the button to a random position within the popup on the first click
+            const popup = closeButtonRef.current.parentElement;
+            const popupRect = popup.getBoundingClientRect();
+            const buttonRect = closeButtonRef.current.getBoundingClientRect();
+            const newX = Math.floor(Math.random() * (popupRect.width - buttonRect.width));
+            const newY = Math.floor(Math.random() * (popupRect.height - buttonRect.height));
+            closeButtonRef.current.style.transform = `translate(${newX}px, ${newY}px)`;
+            setClickCount(clickCount +  1);
+        } else {
+            // On subsequent clicks, with a  33% chance, close the popup, else move the button
+            if (Math.random() <  0.33) {
+                setShowPopup(false);
+            } else {
+                // Move the button to a random position within the popup
+                const popup = closeButtonRef.current.parentElement;
+                const popupRect = popup.getBoundingClientRect();
+                const buttonRect = closeButtonRef.current.getBoundingClientRect();
+                const newX = Math.floor(Math.random() * (popupRect.width - buttonRect.width));
+                const newY = Math.floor(Math.random() * (popupRect.height - buttonRect.height));
+                closeButtonRef.current.style.transform = `translate(${newX}px, ${newY}px)`;
+            }
+        }
+    };
+
+    // Animate the button's movement
+    useEffect(() => {
+        if (closeButtonRef.current) {
+            closeButtonRef.current.style.transition = 'transform  0.5s ease-in-out';
+        }
+    }, []);
   return (
     <>
 
@@ -49,7 +82,8 @@ export default function Index({ allPosts }: Props) {
           {morePosts.length > 0 && <MoreStories posts={morePosts} />}
         </Container>
           {showPopup && (
-              <div className="fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog" aria-modal="true">
+              <div className="fixed z-10 inset-0 overflow-y-auto" aria-labelledby="modal-title" role="dialog"
+                   aria-modal="true">
                   <div className="flex items-end justify-center min-h-screen pt-4 px-4 pb-20 text-center sm:block sm:p-0">
                       <div className="fixed inset-0 bg-gray-500 bg-opacity-75 transition-opacity" aria-hidden="true"></div>
                       <span className="hidden sm:inline-block sm:align-middle sm:h-screen" aria-hidden="true">&#8203;</span>
@@ -67,16 +101,21 @@ export default function Index({ allPosts }: Props) {
                               </div>
                           </div>
                           <div className="bg-gray-50 px-4 py-3 sm:px-6 sm:flex sm:flex-row-reverse">
-                              <button type="button" ref={closeButtonRef} className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm" onClick={closePopup}>
+                              <motion.button
+                                  type="button"
+                                  ref={closeButtonRef}
+                                  className="w-full inline-flex justify-center rounded-md border border-transparent shadow-sm px-4 py-2 bg-red-600 text-base font-medium text-white hover:bg-red-700 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500 sm:ml-3 sm:w-auto sm:text-sm"
+                                  onClick={closePopup}
+                              >
                                   Už se nechci dívat na tento skvost
-                              </button>
+                              </motion.button>
                           </div>
                       </div>
                   </div>
               </div>
           )}
       </Layout>
-      <Analytics/>
+        <Analytics/>
 
     </>
 
@@ -84,16 +123,16 @@ export default function Index({ allPosts }: Props) {
 }
 
 export const getStaticProps = async () => {
-  const allPosts = getAllPosts([
-    'title',
-    'date',
-    'slug',
-    'author',
-    'coverImage',
-    'excerpt',
-  ])
+    const allPosts = getAllPosts([
+        'title',
+        'date',
+        'slug',
+        'author',
+        'coverImage',
+        'excerpt',
+    ])
 
-  return {
-    props: { allPosts },
-  }
+    return {
+        props: {allPosts},
+    }
 }
