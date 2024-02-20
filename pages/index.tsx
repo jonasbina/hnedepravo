@@ -50,8 +50,8 @@ export default function Index({allPosts}: Props) {
                 let maxX = popupRect.width - buttonRect.width*2;
                 let maxY = popupRect.height - buttonRect.height*2;
 
-                let newX = Math.floor(Math.random() * maxX) - buttonRect.left;
-                let newY = Math.floor(Math.random() * maxY) - buttonRect.top;
+                let newX = Math.floor(Math.random() * maxX);
+                let newY = Math.floor(Math.random() * maxY);
 
                 if (newX<buttonRect.width*2){
                     newX+=buttonRect.width*2
@@ -59,7 +59,7 @@ export default function Index({allPosts}: Props) {
                 if (newY<buttonRect.height*2){
                     newY+=buttonRect.height*2
                 }
-                closeButtonRef.current.style.transform = `translate(${newX}px, ${newY}px)`;
+                closeButtonRef.current.style.transform = `translate(${newX - buttonRect.left}px, ${newY - buttonRect.top}px)`;
             }
         }
     };
