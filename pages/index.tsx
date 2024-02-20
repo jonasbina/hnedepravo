@@ -47,10 +47,18 @@ export default function Index({allPosts}: Props) {
                 const popup = closeButtonRef.current.parentElement.parentElement.parentElement.parentElement;
                 const popupRect = popup.getBoundingClientRect();
                 const buttonRect = closeButtonRef.current.getBoundingClientRect();
-                const maxX = popupRect.width - buttonRect.width;
-                const maxY = popupRect.height - buttonRect.height;
-                const newX = Math.floor(Math.random() * maxX) - buttonRect.left;
-                const newY = Math.floor(Math.random() * maxY) - buttonRect.top;
+                let maxX = popupRect.width - buttonRect.width;
+                let maxY = popupRect.height - buttonRect.height;
+
+                let newX = Math.floor(Math.random() * maxX) - buttonRect.left;
+                let newY = Math.floor(Math.random() * maxY) - buttonRect.top;
+
+                if (newX<buttonRect.width*2){
+                    newX+=buttonRect.width*2
+                }
+                if (maxY<buttonRect.height*2){
+                    newY+=buttonRect.height*2
+                }
                 closeButtonRef.current.style.transform = `translate(${newX}px, ${newY}px)`;
             }
         }
