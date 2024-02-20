@@ -43,7 +43,7 @@ export default function Index({allPosts}: Props) {
             closeButtonRef.current.style.transform = `translate(${newX - buttonRect.left}px, ${newY - buttonRect.top}px)`;
             setClickCount(clickCount + 1);
         } else {
-            if (Math.random() < 0.3) {
+            if (Math.random() < 0.6) {
                 setShowPopup(false);
             } else {
                 const maxX = popupRect.width - buttonWidth;
