@@ -46,8 +46,8 @@ export default function Index({allPosts}: Props) {
             closeButtonRef.current.style.transform = `translate(${newX - buttonRect.left}px, ${newY - buttonRect.top}px)`;
             setClickCount(clickCount + 1);
         } else {
-            // On subsequent clicks, with a 10% chance, close the popup, else move the button
-            if (Math.random() < 0.1) {
+            // On subsequent clicks, with a 33% chance, close the popup, else move the button
+            if (Math.random() < 0.3) {
                 setShowPopup(false);
             } else {
                 // Move the button to a random position within the popup
@@ -66,7 +66,7 @@ export default function Index({allPosts}: Props) {
                 if (newY<buttonRect.height){
                     newY+=buttonRect.height
                 }
-                closeButtonRef.current.style.transform = `translate(${newX - buttonRect.left}px, ${newY - buttonRect.top}px)`;
+                closeButtonRef.current.style.transform = `translate(${(newX - buttonRect.left)/4}px, ${(newY - buttonRect.top)/4}px)`;
             }
         }
     };
@@ -121,7 +121,7 @@ export default function Index({allPosts}: Props) {
                                         <div className="mt-3 text-center sm:mt-0 sm:ml-4 sm:text-left">
                                             <h3 className="text-lg leading-6 font-medium text-gray-900"
                                                 id="modal-title">
-                                                Máte volební právo v třídě Terie A?
+                                                Máte volební právo ve třídě Terie A?
                                             </h3>
                                             <div className="mt-2">
 
