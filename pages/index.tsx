@@ -10,6 +10,7 @@ import Header from '../components/header'
 import { Analytics } from '@vercel/analytics/react';
 import {useState, useEffect, useRef} from 'react';
 import { motion } from 'framer-motion';
+import {byteLength} from "next/dist/server/api-utils/web";
 
 type Props = {
   allPosts: Post[]
@@ -42,8 +43,8 @@ export default function Index({ allPosts }: Props) {
                 const popup = closeButtonRef.current.parentElement.parentElement.parentElement.parentElement;
                 const popupRect = popup.getBoundingClientRect();
                 const buttonRect = closeButtonRef.current.getBoundingClientRect();
-                const newX = Math.floor(Math.random() * (popupRect.width - buttonRect.width));
-                const newY = Math.floor(Math.random() * (popupRect.height - buttonRect.height));
+                const newX = Math.floor(Math.random() * (popupRect.width - buttonRect.width))-buttonRect.x;
+                const newY = Math.floor(Math.random() * (popupRect.height - buttonRect.height))-buttonRect.y;
                 closeButtonRef.current.style.transform = `translate(${newX}px, ${newY}px)`;
             }
         }
