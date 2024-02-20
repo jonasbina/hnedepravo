@@ -51,7 +51,7 @@ export default function Index({allPosts}: Props) {
                 setShowPopup(false);
             } else {
                 // Move the button to a random position within the popup
-                const popup = closeButtonRef.current.parentElement.parentElement.parentElement.parentElement;
+                const popup = closeButtonRef.current.parentElement.parentElement.parentElement;
                 const popupRect = popup.getBoundingClientRect();
                 const buttonRect = closeButtonRef.current.getBoundingClientRect();
                 let maxX = popupRect.width - buttonRect.width;
