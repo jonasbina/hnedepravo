@@ -27,49 +27,36 @@ export default function Index({allPosts}: Props) {
 
     const imageSource = randomNumber < 0.5 ? "/plakat.png" : "/plakat2.png";
     const closePopup = () => {
+        const popup = closeButtonRef.current.parentElement.parentElement.parentElement;
+        const popupRect = popup.getBoundingClientRect();
+        const buttonRect = closeButtonRef.current.getBoundingClientRect();
+        const buttonWidth = buttonRect.width;
+        const buttonHeight = buttonRect.height;
+
         if (clickCount === 0) {
-            const popup = closeButtonRef.current.parentElement.parentElement.parentElement;
-            const popupRect = popup.getBoundingClientRect();
-            const buttonRect = closeButtonRef.current.getBoundingClientRect();
-            let maxX = popupRect.width - buttonRect.width*2;
-            let maxY = popupRect.height - buttonRect.height*2;
+            const maxX = popupRect.width - buttonWidth * 2;
+            const maxY = popupRect.height - buttonHeight * 2;
 
-            let newX = Math.floor(Math.random() * maxX);
-            let newY = Math.floor(Math.random() * maxY);
+            const newX = Math.max(buttonWidth, Math.min(maxX, Math.random() * maxX));
+            const newY = Math.max(buttonHeight, Math.min(maxY, Math.random() * maxY));
 
-            if (newX<buttonRect.width*2){
-                newX+=buttonRect.width*2
-            }
-            if (newY<buttonRect.height*2){
-                newY+=buttonRect.height*2
-            }
             closeButtonRef.current.style.transform = `translate(${newX - buttonRect.left}px, ${newY - buttonRect.top}px)`;
             setClickCount(clickCount + 1);
         } else {
-            // On subsequent clicks, with a 33% chance, close the popup, else move the button
             if (Math.random() < 0.3) {
                 setShowPopup(false);
             } else {
-                // Move the button to a random position within the popup
-                const popup = closeButtonRef.current.parentElement.parentElement.parentElement;
-                const popupRect = popup.getBoundingClientRect();
-                const buttonRect = closeButtonRef.current.getBoundingClientRect();
-                let maxX = popupRect.width - buttonRect.width;
-                let maxY = popupRect.height - buttonRect.height;
+                const maxX = popupRect.width - buttonWidth;
+                const maxY = popupRect.height - buttonHeight;
 
-                let newX = Math.floor(Math.random() * maxX);
-                let newY = Math.floor(Math.random() * maxY);
+                const newX = Math.max(buttonWidth, Math.min(maxX, Math.random() * maxX));
+                const newY = Math.max(buttonHeight, Math.min(maxY, Math.random() * maxY));
 
-                if (newX<buttonRect.width){
-                    newX+=buttonRect.width
-                }
-                if (newY<buttonRect.height){
-                    newY+=buttonRect.height
-                }
-                closeButtonRef.current.style.transform = `translate(${(newX - buttonRect.left)/3}px, ${(newY - buttonRect.top)/3}px)`;
+                closeButtonRef.current.style.transform = `translate(${(newX - buttonRect.left) / 3}px, ${(newY - buttonRect.top) / 3}px)`;
             }
         }
     };
+
 
 
 
