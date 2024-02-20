@@ -34,8 +34,8 @@ export default function Index({ allPosts }: Props) {
             closeButtonRef.current.style.transform = `translate(${newX}px, ${newY}px)`;
             setClickCount(clickCount +  1);
         } else {
-            // On subsequent clicks, with a  33% chance, close the popup, else move the button
-            if (Math.random() <  0.33) {
+            // On subsequent clicks, with a  /*33%*/ 10% chance, close the popup, else move the button
+            if (Math.random() <  0.1) {
                 setShowPopup(false);
             } else {
                 // Move the button to a random position within the popup
