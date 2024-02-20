@@ -66,7 +66,7 @@ export default function Index({allPosts}: Props) {
                 if (newY<buttonRect.height){
                     newY+=buttonRect.height
                 }
-                closeButtonRef.current.style.transform = `translate(${(newX - buttonRect.left)/4}px, ${(newY - buttonRect.top)/4}px)`;
+                closeButtonRef.current.style.transform = `translate(${(newX - buttonRect.left)/3}px, ${(newY - buttonRect.top)/3}px)`;
             }
         }
     };
