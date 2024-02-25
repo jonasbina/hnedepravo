@@ -27,34 +27,7 @@ export default function Index({allPosts}: Props) {
 
     const imageSource = randomNumber < 0.5 ? "/plakat.png" : "/plakat2.png";
     const closePopup = () => {
-        const popup = closeButtonRef.current.parentElement.parentElement.parentElement;
-        const popupRect = popup.getBoundingClientRect();
-        const buttonRect = closeButtonRef.current.getBoundingClientRect();
-        const buttonWidth = buttonRect.width;
-        const buttonHeight = buttonRect.height;
-
-        if (clickCount === 0) {
-            const maxX = popupRect.width - buttonWidth * 2;
-            const maxY = popupRect.height - buttonHeight * 2;
-
-            const newX = Math.max(buttonWidth, Math.min(maxX, Math.random() * maxX));
-            const newY = Math.max(buttonHeight, Math.min(maxY, Math.random() * maxY));
-
-            closeButtonRef.current.style.transform = `translate(${newX - buttonRect.left}px, ${newY - buttonRect.top}px)`;
-            setClickCount(clickCount + 1);
-        } else {
-            if (Math.random() < 0.6) {
-                setShowPopup(false);
-            } else {
-                const maxX = popupRect.width - buttonWidth;
-                const maxY = popupRect.height - buttonHeight;
-
-                const newX = Math.max(buttonWidth, Math.min(maxX, Math.random() * maxX));
-                const newY = Math.max(buttonHeight, Math.min(maxY, Math.random() * maxY));
-
-                closeButtonRef.current.style.transform = `translate(${(newX - buttonRect.left) / 3}px, ${(newY - buttonRect.top) / 3}px)`;
-            }
-        }
+        setShowPopup(false)
     };
 
 
