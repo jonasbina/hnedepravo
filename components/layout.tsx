@@ -1,5 +1,6 @@
 import Footer from './footer'
 import Meta from './meta'
+import { SpeedInsights } from "@vercel/speed-insights/next"
 type Props = {
   preview?: boolean
   children: React.ReactNode
@@ -8,6 +9,7 @@ type Props = {
 const Layout = ({ preview, children }: Props) => {
     return (
     <>
+        <SpeedInsights/>
         <Meta />
         <div className="h-full">
           <main>{children}</main>
