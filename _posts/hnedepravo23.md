@@ -30,11 +30,11 @@ mentálně postižené.*
 
 - Tobiáš P. když občanka
 
-„Jestli jsem gay, tak vám můžu říkat b*zny.“
+„Jestli jsem gay, tak vám můžu říkat b\*zny.“
 
 - Dominik
 
-„Nechte k*koty k*kotama a pr*elní prd*lníma.“
+„Nechte k\*koty k\*kotama a pr\*elní prd\*lníma.“
 
 - Paní učitelka Lakomá
 
@@ -46,7 +46,7 @@ mentálně postižené.*
 
 - Adam
 
-„Kuuuuur*a, do p*dele.“
+„Kuuuuur\*a, do p\*dele.“
 
 - Ferencz když zdraženej notebook
 
