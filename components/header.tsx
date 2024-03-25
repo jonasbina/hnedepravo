@@ -17,7 +17,8 @@ const randomTexts = [
     'Štefan je náš král a spasitel lidstva.',
     'Heil Štefan.',
     'řechcem',
-    'Hamás? More like Ham ass xdd (tohle radši ne xd)'
+    'Hamás? More like Ham ass xdd (tohle radši ne xd)',
+    'Ale Štefane, to jsou Maďaři'
 ];
 
 const randomIndex = Math.floor(Math.random() * randomTexts.length);
