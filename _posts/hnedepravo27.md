@@ -1,5 +1,5 @@
 ---
-title: 'ŠOKUJÍCÍ ODHALENÍ!!! Sekundání mají penisy!!!'
+title: 'ŠOKUJÍCÍ ODHALENÍ!!! Sekundáni mají penisy!!!'
 excerpt: '27. díl Hnědého práva'
 coverImage: '/27.png'
 date: '2024-04-08T07:00:00.000Z'
