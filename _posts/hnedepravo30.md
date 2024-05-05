@@ -11,7 +11,7 @@ ogImage:
 ---
 ## **Události a komentáře:**
 
-_Poslední zvonění, maturantská akce, která vypadá nevině. Co a kdo se však
+_Poslední zvonění, maturantská akce, která vypadá nevinně. Co a kdo se však
 skrývá pod povrchem, odhalíme v tomto článku._
 
 Tři maturanti byli viděni vandalizujíc HNĚDÉ PRÁVO. Na tento seriózní
