@@ -1,5 +1,5 @@
 ---
-title: 'Štefan: Nevinný maďar nebo vrah?!'
+title: 'Štefan: Král nebo Atentátník?!'
 excerpt: '31. díl Hnědého práva'
 coverImage: '/31.png'
 date: '2024-05-20T07:00:00.000Z'
