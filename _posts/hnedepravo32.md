@@ -39,7 +39,7 @@ zakroužkovanými místy, kde se Fico vyskytuje.
 
 „Já je zničim, já je roztrhám, já je zabiju.“
 
-- Aleš Oppenheimer Novák
+- Aleš Oppenheimer Slovák
 
 „Nechci tě spadnout.“
 
@@ -47,7 +47,7 @@ zakroužkovanými místy, kde se Fico vyskytuje.
 
 „V tom černym, tam je to nebezpečný.“
 
-- Pan učitel Novák
+- Pan učitel Slovák
 
 
 ## **Vtip týdne (AI edice):**

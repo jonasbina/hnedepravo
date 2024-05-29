@@ -71,4 +71,3 @@ křesadel, šípů a luků.*
 ## **Fakt týdne:**
 
 *Hurikán vygeneruje za 10 minut více energie než všechny atomové bomby dohromady.*
-

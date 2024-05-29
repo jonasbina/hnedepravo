@@ -23,27 +23,27 @@ Poděda je kvůli tomu aktuálně ve vězení. Redakce HNĚDÉHO PRÁVA
 s tímto jednáním politických figur souhlasí. I proto bude příští týden
 publikován zatím nejobsáhlejší článek na podpoření Štefnovi moci.*
 
-## **Hlášky týdne (Novák edice):**
+## **Hlášky týdne (Slovák edice):**
 
 „Všechny Přemyslovce blblblblblblbl.”
 
-- Pan učitel Novák
+- Pan učitel Slovák
 
 „Skočil elektron na sklo nebo skočilo sklo na elektron?“
 
-- Pan učitel Novák
+- Pan učitel Slovák
 
 „Když se nad tim zapomenete.“
 
-- Pan učitel Novák
+- Pan učitel Slovák
 
 „Schválně jsem tam dal třicítky, aby se to dalo dobře dělat.“
 
-- Pan učitel Novák
+- Pan učitel Slovák
 
 „Chce to novej vocas vám řikám.“
 
-- Pan učitel Novák
+- Pan učitel Slovák
 
 
 ## **Hlášky týdne:**
@@ -77,5 +77,4 @@ Jak se říká nudnému filmu o chemii?
 ## **Fakt týdne:**
 
 Jízda na horské dráze může pomoci léčbě ledvinových kamenů.
-
 

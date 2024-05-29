@@ -33,7 +33,7 @@ Mlátil.
 
 „Záleží na dýlce, ale je to malý.“
 
-- Pan učitel Novák (možná)
+- Pan učitel Slovák (možná)
 
 „Sexuále, počítej!“
 
@@ -41,7 +41,7 @@ Mlátil.
 
 „Utrhnu vám hlavu! Myslím, že v primě jsem ji trhal Kryštofovi.“
 
-- Určitě ne pan učitel Novák
+- Určitě ne pan učitel Slovák
 
 „Já jsem se právě omylem probodl.“
 
@@ -65,4 +65,3 @@ francouzštině)*
 ## **Fakt týdne:**
 
 Hlemýždi mají 14 000 zubů.
-

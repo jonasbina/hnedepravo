@@ -34,7 +34,7 @@ Reportér: „Dobře, děkuji Vám za rozhovor a nashledanou.“
 „Já si musím dojít do kraje učebny, protože bych to tady jinak postříkal a ono
 to hrozně smrdí.“
 
-- Pan učitel Novák
+- Pan učitel Slovák
 
 „Já neřikám že máš péro, já jen řikám, že je to u tebe možný.“
 
@@ -51,7 +51,7 @@ HAHAHAHA.“
 
 „On to zas zmrazil, to je pytlik.“
 
-- Pan učitel Novák sám na sebe
+- Pan učitel Slovák sám na sebe
 
 „Haha, my jsme bílý, takže jdeme dřív.“
 

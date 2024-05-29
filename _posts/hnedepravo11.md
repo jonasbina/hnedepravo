@@ -85,4 +85,3 @@ Nechte si to do altánku.
 ## **Fakt týdne:**
 
 Kočičí čelist se nemůže pohybovat do stran.
-

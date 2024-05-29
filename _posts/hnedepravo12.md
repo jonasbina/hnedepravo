@@ -35,7 +35,7 @@ Reportér: „A myslíte s....“
 
 „Všechno má být jednou poprvé.“
 
-- Pan učitel Novák
+- Pan učitel Slovák
 
 „Já jsem gynekolog přes hmyz.“
 
@@ -43,7 +43,7 @@ Reportér: „A myslíte s....“
 
 „Na velikosti nezáleží.“
 
-- Pan učitel Novák
+- Pan učitel Slovák
 
 „To je teda zfetovanej míček.“
 

@@ -33,7 +33,7 @@ zavolejte nám na číslo 755 733 387.
 
 „Návrh: dáme trojku.“
 
-- Novák
+- Slovák
 
 „To budu mít mokrý a černý.“
 
@@ -65,5 +65,4 @@ Radši nežli volit Kačku, tak to radši odciz značku.
 ## **Fakt týdne:**
 
 Jediné domácí zvíře, o kterém se Bible nezmiňuje, je kočka.
-
 

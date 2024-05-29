@@ -31,7 +31,7 @@ Pokud budete mít zájem o další fakta o Cecilovi, zavolejte nám na číslo 7
 
 „Tak já jsem se dneska neoholil, a hned tu na mě holky stojí frontu.“
 
-- Pan učitel Novák
+- Pan učitel Slovák
 
 „Kde je kurva ta bzum bzum.“
 
@@ -39,7 +39,7 @@ Pokud budete mít zájem o další fakta o Cecilovi, zavolejte nám na číslo 7
 
 „Vystrčit ho nějakou dírou z okna, a on tam zmrzl.“
 
-- Pan učitel Novák
+- Pan učitel Slovák
 
 „Jony má bílou prdelní mikinu.“
 

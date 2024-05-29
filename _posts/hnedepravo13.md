@@ -41,7 +41,7 @@ zakázalo vydávání jakéhokoliv jiného deníku než **HNĚDÉ PRÁVO**.
 
 „Mám mikinu a jsem raper dududu“
 
-- Pan učitel Novák
+- Pan učitel Slovák
 
 „Malé d je tedy 38 cm.“ „Tak to jdi do prd*le.“
 
@@ -66,7 +66,7 @@ zakázalo vydávání jakéhokoliv jiného deníku než **HNĚDÉ PRÁVO**.
 
 „Tam zpátky, tam zpátky, ahhhhh.“
 
-- Pan učitel Novák
+- Pan učitel Slovák
 
 „V čele Monaka stojí kníže, kterej je stejně starej jako já, když jsme byli malý,
 tak jsme se kamarádili, teda já spíš s jeho sestrou.“
@@ -75,7 +75,7 @@ tak jsme se kamarádili, teda já spíš s jeho sestrou.“
 
 „Máš pravdu, ale NE.“
 
-- Pan učitel Novák
+- Pan učitel Slovák
 
 „Tak já nevím, mě by to třeba nenapadlo strkat do pusy.“
 

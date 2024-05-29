@@ -87,4 +87,3 @@ soutěž nevyhrála, ale ty záběry jsou snad na ještě jednu recenzi...
 
 V roce 2016 prodal Mozart více CDs než Beyonce.
 
-

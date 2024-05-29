@@ -60,4 +60,3 @@ Nejdelší dosud používaný název místa je kopec na Novém Zélandu:
 Taumatawhakatangihangaoauauotameteaturipukakapikimaungahoronuku
 pokaiwhenuakitanatahu.
 
-

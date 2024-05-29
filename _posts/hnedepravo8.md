@@ -91,4 +91,3 @@ Víte, kde bydlí Peca? Na jižní Cecílii.
 
 Největší vyřezávaná dýně na světě vážila 12175,38 kg
 
-

@@ -45,7 +45,7 @@ Mirka: Aha, takže Vás už taky dostali jo? Tak to tady všechny zabiju AAAAAA.
 
 „Pivo je voda.“
 
-- Pan učitel Novák
+- Pan učitel Slovák
 
 „I am not racist, but people with darker skin...“
 

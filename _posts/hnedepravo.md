@@ -35,7 +35,7 @@ Kryštof: Neshledanou.
 
 „Jsem byl na adapťáku, a bolí mě potom tady takhle. *ukazuje si na zadek*“ 
 
--Pan učitel Novák při první hodině fyziky 
+-Pan učitel Slovák při první hodině fyziky 
 
 „K tabuli půjde… Valča.“  „Haha, půjde“ 
 

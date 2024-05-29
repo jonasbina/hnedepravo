@@ -29,7 +29,7 @@ mrtvého, bude finanční odměna 0.0000013 Bitcoinu.
 
 „Velkej malíř, říkej mi Korábe.“
 
-- Pan učitel Novák
+- Pan učitel Slovák
 
 „Myslim, že šňupat mouku nebyl dobrej nápad.“
 
@@ -37,7 +37,7 @@ mrtvého, bude finanční odměna 0.0000013 Bitcoinu.
 
 „Že to nejsem jenom já, kdo chce trojku, že i ostatní učitelé mají tu touhu.“
 
-- Pan učitel Novák
+- Pan učitel Slovák
 
 „Já jsem zjistil, že asi začnu dělat... aaaaaaaaaaaaaaaa.“
 
@@ -49,7 +49,7 @@ mrtvého, bude finanční odměna 0.0000013 Bitcoinu.
 
 „Nevytrhuj z kontextu ty bulvární kryso.“
 
-- Pan učitel Novák
+- Pan učitel Slovák
 
 
 ## **Zpravodajství z Přibyslavi (AI edice):**
@@ -58,7 +58,7 @@ Děti a senioři z Přibyslavi se dnes spojili ve výtvarné akci, která okouzl
 celé město. Na náměstí vytvořili společně barevný mural, který vypráví
 příběh jejich společenství a historie. "Tato iniciativa spojila generace a
 vytvořila nádherný obraz, který nás bude provázet dlouho," řekla Marie
-Nováková, jedna z účastnic. Podobné akce nejenže posilují komunitní
+Slováková, jedna z účastnic. Podobné akce nejenže posilují komunitní
 pouta, ale také podporují tvůrčí projev a sdílení zkušeností mezi
 generacemi. Přibyslavský mural se tak stal symbolem jednoty a krásy
 místního ducha. "Je úžasné vidět, jak se město spojuje prostřednictvím
@@ -85,5 +85,4 @@ E-n*gga.
 Hlavní knihovna na univerzitě v Indianě se každoročně propadá o více než
 jeden centimetr, protože inženýři nepočítali s váhou všech knih, které se do
 ní nakonec vejdou.
-
 

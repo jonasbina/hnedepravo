@@ -98,4 +98,3 @@ mám plný pokoj písku.
 ## **Fakt týdne:**
 
 Propiskami se průměrně udusí 100 lidí ročně.
-
