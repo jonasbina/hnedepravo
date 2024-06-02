@@ -2,7 +2,7 @@
 title: 'Opíchal Palmovský Vopíchala?!'
 excerpt: '33. díl Hnědého práva'
 coverImage: '/33.png'
-date: '2024-05-27T07:00:00.000Z'
+date: '2024-06-03T07:00:00.000Z'
 author:
     name: Tomáš Bouchal
     picture: '/assets/blog/authors/tb.jpg'
