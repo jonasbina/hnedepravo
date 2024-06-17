@@ -1,5 +1,5 @@
 ---
-title: 'Žaban mrtvý, unikne Hlína i tentokrát? asi spíš středník tam dej'
+title: 'Žaban mrtvý; unikne Hlína i tentokrát?'
 excerpt: '34. díl Hnědého práva'
 coverImage: '/34.png'
 date: '2024-06-17T07:00:00.000Z'
