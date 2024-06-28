@@ -1,6 +1,5 @@
 import { parse, format, addDays, eachDayOfInterval, isTuesday, isFriday } from 'date-fns';
 import React, {useState} from "react";
-import quotesData from "../public/quotes.json";
 import {Navbar} from "../components/navbar";
 
 type Weekday = 'Tuesday' | 'Friday';
