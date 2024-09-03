@@ -68,5 +68,5 @@ export function getAllPosts(fields: string[] = []) {
   const currentPosts = posts.filter((post) => parseISO(post.date) >= boundaryDate)
   const pastPosts = posts.filter((post) => parseISO(post.date) < boundaryDate)
 
-  return { currentPosts, pastPosts }
+  return { currentPosts, pastPosts, posts }
 }
