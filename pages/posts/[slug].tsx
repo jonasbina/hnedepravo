@@ -81,16 +81,17 @@ export async function getStaticProps({ params }: Params) {
 }
 
 export async function getStaticPaths() {
-  const posts = getAllPosts(['slug'])
+  const { currentPosts, pastPosts } = getAllPosts(['slug']);
+
+  const posts = [...currentPosts, ...pastPosts]; // Combine both current and past posts
 
   return {
-    paths: posts.map((post) => {
-      return {
-        params: {
-          slug: post.slug,
-        },
-      }
-    }),
+    paths: posts.map((post) => ({
+      params: {
+        slug: post.slug,
+      },
+    })),
     fallback: false,
-  }
+  };
 }
+

@@ -13,37 +13,27 @@ import {motion} from 'framer-motion';
 import {byteLength} from "next/dist/server/api-utils/web";
 
 type Props = {
-    allPosts: Post[]
+    currentPosts: Post[];
+    pastPosts: Post[];
 }
 
 
-export default function Index({allPosts}: Props) {
-    const heroPost = allPosts[0]
-    const closeButtonRef = useRef(null);
-    const morePosts = allPosts.slice(1)
+export default function Index({ currentPosts, pastPosts }: Props) {
+    const heroPost = currentPosts[0]
+    const moreCurrentPosts = currentPosts.slice(1)
+    const morePastPosts = pastPosts
 
-
-
-
-    // Animate the button's movement
-    useEffect(() => {
-        if (closeButtonRef.current) {
-            closeButtonRef.current.style.transition = 'transform  0.5s ease-in-out';
-        }
-    }, []);
     return (
         <>
-
             <Layout>
-
                 <Head>
-                    <meta charSet="utf-8"/>
-                    <meta name="viewport" content="width=device-width, initial-scale=1"/>
-                    <meta name="description" content="Hnědé Právo: Smysluplné zprávy!"/>
+                    <meta charSet="utf-8" />
+                    <meta name="viewport" content="width=device-width, initial-scale=1" />
+                    <meta name="description" content="Hnědé Právo: Smysluplné zprávy!" />
                     <title>Hnědé Právo</title>
                 </Head>
 
-                <Header/>
+                <Header />
                 <Container>
                     {heroPost && (
                         <HeroPost
@@ -55,13 +45,16 @@ export default function Index({allPosts}: Props) {
                             excerpt={heroPost.excerpt}
                         />
                     )}
-                    {morePosts.length > 0 && <MoreStories posts={morePosts}/>}
+                    {moreCurrentPosts.length > 0 && (
+                        <MoreStories posts={moreCurrentPosts} title="Další díly" />
+                    )}
+                    {morePastPosts.length > 0 && (
+                        <MoreStories posts={morePastPosts} title="1. série" />
+                    )}
                 </Container>
             </Layout>
-            <Analytics/>
-
+            <Analytics />
         </>
-
     )
 }
 
@@ -74,8 +67,10 @@ export const getStaticProps = async () => {
         'coverImage',
         'excerpt',
     ])
+    const currentPosts = allPosts.currentPosts
+    const pastPosts = allPosts.pastPosts
 
     return {
-        props: {allPosts},
+        props: { currentPosts, pastPosts },
     }
 }

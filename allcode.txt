@@ -1,0 +1,796 @@
+import fs from 'fs'
+import { join } from 'path'
+import matter from 'gray-matter'
+
+const postsDirectory = join(process.cwd(), '_posts/')
+
+export function getPostSlugs() {
+  return fs.readdirSync(postsDirectory)
+}
+
+export function getPostBySlug(slug: string, fields: string[] = []) {
+  const realSlug = slug.replace(/\.md$/, '')
+  const fullPath = join(postsDirectory, `${realSlug}.md`)
+  const fileContents = fs.readFileSync(fullPath, 'utf8')
+  const { data, content } = matter(fileContents)
+
+  type Items = {
+    [key: string]: string
+  }
+
+  const items: Items = {}
+
+  // Ensure only the minimal needed data is exposed
+  fields.forEach((field) => {
+    if (field === 'slug') {
+      items[field] = realSlug
+    }
+    if (field === 'content') {
+      items[field] = content
+    }
+
+    if (typeof data[field] !== 'undefined') {
+      items[field] = data[field]
+    }
+  })
+
+  return items
+}
+
+export function getAllPosts(fields: string[] = []) {
+  const slugs = getPostSlugs()
+  const posts = slugs
+    .map((slug) => getPostBySlug(slug, fields))
+    // sort posts by date in descending order
+    .sort((post1, post2) => (post1.date > post2.date ? -1 : 1))
+  return posts
+}
+import { remark } from 'remark'
+import html from 'remark-html'
+
+export default async function markdownToHtml(markdown: string) {
+  const result = await remark().use(html).process(markdown)
+  return result.toString()
+}
+import { AppProps } from 'next/app'
+import { ThemeProvider } from 'next-themes'
+import '../styles/index.css'
+
+function MyApp({ Component, pageProps }) {
+    return (
+        <ThemeProvider attribute="class">
+            <Component {...pageProps} />
+        </ThemeProvider>
+    )
+}
+
+export default MyApp
+import Container from '../components/container'
+import MoreStories from '../components/more-stories'
+import HeroPost from '../components/hero-post'
+import Layout from '../components/layout'
+import {getAllPosts} from '../lib/api'
+import Head from 'next/head'
+import {CMS_NAME} from '../lib/constants'
+import Post from '../interfaces/post'
+import Header from '../components/header'
+import {Analytics} from '@vercel/analytics/react';
+import {useState, useEffect, useRef} from 'react';
+import {motion} from 'framer-motion';
+import {byteLength} from "next/dist/server/api-utils/web";
+
+type Props = {
+    allPosts: Post[]
+}
+
+
+export default function Index({allPosts}: Props) {
+    const heroPost = allPosts[0]
+    const closeButtonRef = useRef(null);
+    const morePosts = allPosts.slice(1)
+
+
+
+
+    // Animate the button's movement
+    useEffect(() => {
+        if (closeButtonRef.current) {
+            closeButtonRef.current.style.transition = 'transform  0.5s ease-in-out';
+        }
+    }, []);
+    return (
+        <>
+
+            <Layout>
+
+                <Head>
+                    <meta charSet="utf-8"/>
+                    <meta name="viewport" content="width=device-width, initial-scale=1"/>
+                    <meta name="description" content="Hnědé Právo: Smysluplné zprávy!"/>
+                    <title>Hnědé Právo</title>
+                </Head>
+
+                <Header/>
+                <Container>
+                    {heroPost && (
+                        <HeroPost
+                            title={heroPost.title}
+                            coverImage={heroPost.coverImage}
+                            date={heroPost.date}
+                            author={heroPost.author}
+                            slug={heroPost.slug}
+                            excerpt={heroPost.excerpt}
+                        />
+                    )}
+                    {morePosts.length > 0 && <MoreStories posts={morePosts}/>}
+                </Container>
+            </Layout>
+            <Analytics/>
+
+        </>
+
+    )
+}
+
+export const getStaticProps = async () => {
+    const allPosts = getAllPosts([
+        'title',
+        'date',
+        'slug',
+        'author',
+        'coverImage',
+        'excerpt',
+    ])
+
+    return {
+        props: {allPosts},
+    }
+}
+import { Html, Head, Main, NextScript } from 'next/document'
+
+export default function Document() {
+  return (
+    <Html lang="en">
+      <Head>
+        
+      </Head>
+      <body>
+        <Main />
+        <NextScript />
+      </body>
+    </Html>
+  )
+}
+import { useRouter } from 'next/router'
+import ErrorPage from 'next/error'
+import Container from '../../components/container'
+import PostBody from '../../components/post-body'
+import Header from '../../components/header'
+import PostHeader from '../../components/post-header'
+import Layout from '../../components/layout'
+import { getPostBySlug, getAllPosts } from '../../lib/api'
+import PostTitle from '../../components/post-title'
+import Head from 'next/head'
+import { CMS_NAME } from '../../lib/constants'
+import markdownToHtml from '../../lib/markdownToHtml'
+import type PostType from '../../interfaces/post'
+
+type Props = {
+  post: PostType
+  morePosts: PostType[]
+  preview?: boolean
+}
+
+export default function Post({ post, morePosts, preview }: Props) {
+  const router = useRouter()
+  const title = `${post.title}`
+  if (!router.isFallback && !post?.slug) {
+    return <ErrorPage statusCode={404} />
+  }
+  return (
+    <Layout preview={preview}>
+      <Container>
+        <Header />
+        {router.isFallback ? (
+          <PostTitle>Loading…</PostTitle>
+        ) : (
+          <>
+            <article className="mb-32">
+              <Head>
+                <title>{title}</title>
+                <meta property="og:image" content={post.ogImage.url} />
+              </Head>
+              <PostHeader
+                title={post.title}
+                coverImage={post.coverImage}
+                date={post.date}
+                author={post.author}
+              />
+              <PostBody content={post.content} />
+            </article>
+          </>
+        )}
+      </Container>
+    </Layout>
+  )
+}
+
+type Params = {
+  params: {
+    slug: string
+  }
+}
+
+export async function getStaticProps({ params }: Params) {
+  const post = getPostBySlug(params.slug, [
+    'title',
+    'date',
+    'slug',
+    'author',
+    'content',
+    'ogImage',
+    'coverImage',
+  ])
+  const content = await markdownToHtml(post.content || '')
+
+  return {
+    props: {
+      post: {
+        ...post,
+        content,
+      },
+    },
+  }
+}
+
+export async function getStaticPaths() {
+  const posts = getAllPosts(['slug'])
+
+  return {
+    paths: posts.map((post) => {
+      return {
+        params: {
+          slug: post.slug,
+        },
+      }
+    }),
+    fallback: false,
+  }
+}
+type Props = {
+  name: string
+  picture: string
+}
+
+const Avatar = ({ name, picture }: Props) => {
+  return (
+    <div className="flex items-center">
+      <img src={picture} className="w-12 h-12 rounded-full mr-4" alt={name} />
+      <div className="text-xl font-bold">{name}</div>
+    </div>
+  )
+}
+
+export default Avatar
+type Props = {
+  children?: React.ReactNode
+}
+
+const Container = ({ children }: Props) => {
+  return <div className="container mx-auto px-5">{children}</div>
+}
+
+export default Container
+import cn from 'classnames'
+import Link from 'next/link'
+import Image from 'next/image'
+
+type Props = {
+  title: string
+  src: string
+  slug?: string
+}
+
+const CoverImage = ({ title, src, slug }: Props) => {
+  const image = (
+    <Image
+      src={src}
+      alt={`Cover Image for ${title}`}
+      className={cn('shadow-sm w-full', {
+        'hover:shadow-lg transition-shadow duration-200': slug,
+      })}
+      width={1300}
+      height={630}
+    />
+  )
+  return (
+    <div className="sm:mx-0">
+      {slug ? (
+        <Link as={`/posts/${slug}`} href="/posts/[slug]" aria-label={title}>
+          {image}
+        </Link>
+      ) : (
+        image
+      )}
+    </div>
+  )
+}
+
+export default CoverImage
+import { parseISO, format } from 'date-fns'
+
+type Props = {
+  dateString: string
+}
+
+const DateFormatter = ({ dateString }: Props) => {
+  const date = parseISO(dateString)
+  return <time dateTime={dateString}>{format(date, 'LLLL	d, yyyy')}</time>
+}
+
+export default DateFormatter
+import { useState } from 'react';
+
+const Footer = () => {
+    const [rating, setRating] = useState(0);
+    const [hoveredRating, setHoveredRating] = useState(0);
+
+    const handleRating = (rate: number) => {
+        setRating(rate);
+        if (rate < 5) {
+            alert('Ty individuum černé pleti, dej tam 5 hvězd!');
+        }
+    };
+
+    return (
+        <footer className="p-4 bg-black text-white flex items-center justify-center">
+            <div className="flex flex-col items-center text-center">
+                <h1 className="mb-4 text-lg font-bold">Další části stránky</h1>
+                <a className={"text-sm hover:text-blue-900"} href={"/nahodna-hlaska"}>Generátor náhodných hlášek</a>
+                <a className={"text-sm hover:text-blue-900"} href={"/databaze-hlasek"}>Databáze hlášek</a>
+                <a className={"text-sm hover:text-blue-900"} href={"/legal"}>Legal notice</a>
+                <a></a>
+                <h1 className="mb-4 text-lg font-bold">Ohodnoť naši stránku!</h1>
+                <div className="flex space-x-2 mb-4">
+                    {[...Array(5)].map((_, i) => (
+                        <button
+                            onClick={() => handleRating(i + 1)}
+                            onMouseEnter={() => setHoveredRating(i + 1)}
+                            onMouseLeave={() => setHoveredRating(0)}
+                            className="text-2xl cursor-pointer hover:text-yellow-500"
+                            key={i}
+                        >
+                            {i + 1 <= (hoveredRating || rating) ? '★' : '☆'}
+                        </button>
+                    ))}
+                </div>
+                <p className="text-sm">Vážíme si Vaší zpětné vazby. Přesně proto žádné hodnocení neukládáme.
+                    © Hnědé Právo Media 2023
+                </p>
+
+            </div>
+        </footer>
+    );
+};
+
+export default Footer;
+import Head from 'next/head'
+import Image from 'next/image'
+import Link from 'next/link'
+import {useTheme} from 'next-themes'
+import {useState, useEffect} from 'react'
+import {Navbar} from "./navbar";
+
+const randomTexts = [
+    'Pullni ten trigger a bude z tebe n-',
+    'Ahoj, je mi Jarda, jmenuji se  youtuber a jsem jednačtyřicet!',
+    'Dex dex dex -',
+    'Ondřeji prosím!',
+    'Ty mi piješ můj Müllermilch?!?!',
+    'Medpakvprcmech.',
+    'Já jsem ričrd niksn!',
+    'Hugo hihihi',
+    'Štefan je náš král a spasitel lidstva.',
+    'Heil Štefan.',
+    'řechcem',
+    'Hamás? More like Ham ass xdd (tohle radši ne xd)',
+    'Ale Štefane, to jsou Maďaři'
+];
+
+const randomIndex = Math.floor(Math.random() * randomTexts.length);
+const randomText = randomTexts[randomIndex];
+const Header = () => {
+    const [mounted, setMounted] = useState(false);
+    const {theme} = useTheme();
+
+
+    // After mounting, we have access to the theme
+    useEffect(() => setMounted(true), []);
+
+    if (!mounted) return null;
+
+    return (
+        <div className='w-full mx-auto text-center'>
+            <Navbar/>
+            <div className={"max-w-full flex justify-center"}>
+                <Link href="/">
+                    <a>
+                        <Image src={theme === 'light' ? '/logo.svg' : '/dark-logo.svg'} height={400} width={1000}
+                               alt="logo"/>
+                    </a>
+                </Link>
+            </div>
+            <footer style={{
+                textAlign: 'center',
+                backgroundColor: 'transparent',
+                color: theme === 'light' ? 'black' : 'white',
+                padding: '35px',
+                fontSize: '1.6em',
+                fontWeight: "bold"
+            }}>
+                {randomText}
+            </footer>
+        </div>
+    )
+}
+
+export default Headerimport Avatar from './avatar'
+import DateFormatter from './date-formatter'
+import CoverImage from './cover-image'
+import Link from 'next/link'
+import type Author from '../interfaces/author'
+
+type Props = {
+  title: string
+  coverImage: string
+  date: string
+  excerpt: string
+  author: Author
+  slug: string
+}
+
+const HeroPost = ({
+  title,
+  coverImage,
+  date,
+  excerpt,
+  author,
+  slug,
+}: Props) => {
+  return (
+    <section>
+      <div className="mb-8 md:mb-16">
+        <CoverImage title={title} src={coverImage} slug={slug} />
+      </div>
+      <div className="md:grid md:grid-cols-2 md:gap-x-16 lg:gap-x-8 mb-20 md:mb-28">
+        <div>
+          <h3 className="mb-4 text-4xl lg:text-5xl leading-tight">
+            <Link
+              as={`/posts/${slug}`}
+              href="/posts/[slug]"
+              className="hover:underline"
+            >
+              {title}
+            </Link>
+          </h3>
+          <div className="mb-4 md:mb-0 text-lg">
+            <DateFormatter dateString={date} />
+          </div>
+        </div>
+        <div>
+          <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+          <Avatar name={author.name} picture={author.picture} />
+        </div>
+      </div>
+    </section>
+  )
+}
+
+export default HeroPost
+import Footer from './footer'
+import Meta from './meta'
+import { SpeedInsights } from "@vercel/speed-insights/next"
+type Props = {
+  preview?: boolean
+  children: React.ReactNode
+}
+
+const Layout = ({ preview, children }: Props) => {
+    return (
+    <>
+        <SpeedInsights/>
+        <Meta />
+        <div className="h-full">
+          <main>{children}</main>
+        <Footer />
+      </div>
+    </>
+  )
+}
+
+export default Layout
+.markdown {
+  @apply text-lg leading-relaxed;
+}
+
+.markdown p,
+.markdown ul,
+.markdown ol,
+.markdown blockquote {
+  @apply my-6;
+}
+
+.markdown h2 {
+  @apply text-3xl mt-12 mb-4 leading-snug;
+}
+
+.markdown h3 {
+  @apply text-2xl mt-8 mb-4 leading-snug;
+}
+import Head from 'next/head'
+import {HOME_OG_IMAGE_URL} from '../lib/constants'
+
+const Meta = () => {
+    return (
+        <Head>
+            <link
+                rel="apple-touch-icon"
+                sizes="180x180"
+                href="/favicon/apple-touch-icon.png"
+            />
+            <link
+                rel="icon"
+                type="image/png"
+                sizes="32x32"
+                href="/favicon/favicon-32x32.png"
+            />
+            <link
+                rel="icon"
+                type="image/png"
+                sizes="16x16"
+                href="/favicon/favicon-16x16.png"
+            />
+            <link rel="shortcut icon" href="/favicon/favicon.ico"/>
+            <meta name="msapplication-TileColor" content="#000000"/>
+            <meta name="msapplication-config" content="/favicon/browserconfig.xml"/>
+            <meta name="theme-color" content="#000"/>
+            <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+            <link rel="alternate" type="application/rss+xml" href="/feed.xml"/>
+            <meta
+                name="description"
+                content={`Hnědé Právo: Smysluplné zprávy!`}
+            />
+            <meta property="og:image" content={HOME_OG_IMAGE_URL}/>
+        </Head>
+    )
+}
+
+export default Meta
+import PostPreview from './post-preview'
+import type Post from '../interfaces/post'
+
+type Props = {
+  posts: Post[]
+}
+
+const MoreStories = ({ posts }: Props) => {
+  return (
+    <section>
+      <h2 className="mb-8 text-5xl md:text-7xl font-bold tracking-tighter leading-tight">
+        Další díly
+      </h2>
+      <div className="grid grid-cols-1 md:grid-cols-2 md:gap-x-16 lg:gap-x-32 gap-y-20 md:gap-y-32 mb-32">
+        {posts.map((post) => (
+          <PostPreview
+            key={post.slug}
+            title={post.title}
+            coverImage={post.coverImage}
+            date={post.date}
+            author={post.author}
+            slug={post.slug}
+            excerpt={post.excerpt}
+          />
+        ))}
+      </div>
+    </section>
+  )
+}
+
+export default MoreStories
+import { useState } from 'react';
+import Link from 'next/link';
+import { useTheme } from 'next-themes';
+import ThemeButton from "./theme-button";
+
+export const Navbar = () => {
+    const [active, setActive] = useState(false);
+    const { theme, setTheme } = useTheme();
+
+    const toggleTheme = () => {
+        setTheme(theme === 'light' ? 'dark' : 'light');
+    };
+
+    const handleClick = () => {
+        setActive(!active);
+    };
+
+    return (
+        <nav className={`flex items-center flex-wrap p-3 ${active ? 'bg-green-400' : theme==="light" ? 'bg-gray-50' : 'bg-gray-900'}`}>
+            <Link href='/'>
+                <a className='inline-flex items-center p-2 mr-4'>
+                    <span className={`text-xl font-bold uppercase tracking-wide ${active ? 'text-white' : theme==="light"?'text-gray-900':'text-gray-300'}`}>
+                        Hnědé právo
+                    </span>
+                </a>
+            </Link>
+
+            <div className={`lg:inline-flex w-full lg:flex-grow lg:w-auto ${active ? 'block' : 'hidden'}`}>
+                <div className='lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto'>
+                    <Link href='/'>
+                        <a className='lg:inline-flex w-full lg:w-auto px-3 py-2 rounded font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                            Hlavní stránka
+                        </a>
+                    </Link>
+                    <Link href='/databaze-hlasek'>
+                        <a className='lg:inline-flex w-full lg:w-auto px-3 py-2 rounded font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                            Databáze hlášek
+                        </a>
+                    </Link>
+                    <Link href='/nahodna-hlaska'>
+                        <a className='lg:inline-flex w-full lg:w-auto px-3 py-2 rounded font-bold items-center justify-center hover:bg-green-600 hover:text-white'>
+                            Generátor náhodných hlášek
+                        </a>
+                    </Link>
+                    {/* Add more links as needed */}
+                </div>
+            </div>
+
+            <div className='ml-auto'>
+                <ThemeButton />
+            </div>
+        </nav>
+    );
+};
+// @ts-ignore
+import markdownStyles from './markdown-styles.module.css'
+
+type Props = {
+  content: string
+}
+const PostBody = ({ content }: Props) => {
+  return (
+
+    <div className="max-w-2xl mx-auto">
+
+      <div
+        className={markdownStyles['markdown']}
+        dangerouslySetInnerHTML={{ __html:content}}
+      />
+
+    </div>
+
+  )
+}
+
+export default PostBody
+import Avatar from './avatar'
+import DateFormatter from './date-formatter'
+import CoverImage from './cover-image'
+import PostTitle from './post-title'
+import type Author from '../interfaces/author'
+
+type Props = {
+  title: string
+  coverImage: string
+  date: string
+  author: Author
+}
+
+const PostHeader = ({ title, coverImage, date, author }: Props) => {
+  return (
+    <>
+      <PostTitle>{title}</PostTitle>
+      <div className="hidden md:block md:mb-12">
+        <Avatar name={author.name} picture={author.picture} />
+      </div>
+      <div className="mb-8 md:mb-16 sm:mx-0">
+        <CoverImage title={title} src={coverImage} />
+      </div>
+      <div className="max-w-2xl mx-auto">
+        <div className="block md:hidden mb-6">
+          <Avatar name={author.name} picture={author.picture} />
+        </div>
+        <div className="mb-6 text-lg">
+          <DateFormatter dateString={date} />
+        </div>
+      </div>
+    </>
+  )
+}
+
+export default PostHeader
+import Avatar from './avatar'
+import DateFormatter from './date-formatter'
+import CoverImage from './cover-image'
+import Link from 'next/link'
+import type Author from '../interfaces/author'
+
+type Props = {
+  title: string
+  coverImage: string
+  date: string
+  excerpt: string
+  author: Author
+  slug: string
+}
+
+const PostPreview = ({
+  title,
+  coverImage,
+  date,
+  excerpt,
+  author,
+  slug,
+}: Props) => {
+  return (
+    <div>
+      <div className="mb-5">
+        <CoverImage slug={slug} title={title} src={coverImage} />
+      </div>
+      <h3 className="text-3xl mb-3 leading-snug">
+        <Link
+          as={`/posts/${slug}`}
+          href="/posts/[slug]"
+          className="hover:underline"
+        >
+          {title}
+        </Link>
+      </h3>
+      <div className="text-lg mb-4">
+        <DateFormatter dateString={date} />
+      </div>
+      <p className="text-lg leading-relaxed mb-4">{excerpt}</p>
+      <Avatar name={author.name} picture={author.picture} />
+    </div>
+  )
+}
+
+export default PostPreview
+import { ReactNode } from 'react'
+
+type Props = {
+  children?: ReactNode
+}
+
+const PostTitle = ({ children }: Props) => {
+  return (
+    <h1 className="text-5xl md:text-7xl lg:text-8xl font-bold tracking-tighter leading-tight md:leading-none mb-12 text-center md:text-left">
+      {children}
+    </h1>
+  )
+}
+
+export default PostTitle
+const SectionSeparator = () => {
+  return <hr className="border-neutral-200 mt-28 mb-24" />
+}
+
+export default SectionSeparator
+import React from 'react'
+import Image from 'next/image'
+import { useTheme } from "next-themes";
+
+const ThemeButton = () => {
+    const { systemTheme, theme, setTheme } = useTheme();
+    const currentTheme = theme === 'system' ? systemTheme : theme;
+
+    return (
+        <button
+            onClick={() => theme == "dark"? setTheme('light'): setTheme("dark")}
+            className='bg-gray-800 dark:bg-gray-50 hover:bg-gray-600 dark:hover:bg-gray-300 transition-all duration-100 dark:text-white text-gray-800 px-8 py-2 text-2xl md:text-4xl rounded-lg '>
+            <Image src={theme === 'dark' ? '/light-mode.svg' : '/dark-mode.svg'} height={24} width={24} alt="theme" />
+        </button>
+    )
+}
+export default ThemeButton
+
