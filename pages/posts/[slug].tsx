@@ -84,7 +84,7 @@ export async function getStaticPaths() {
   const {currentPosts, pastPosts} = getAllPosts(['slug'])
   const posts = [...currentPosts, ...pastPosts]
   return {
-    paths: currentPosts.map((post) => {
+    paths: posts.map((post) => {
       return {
         params: {
           slug: post.slug,
@@ -94,4 +94,3 @@ export async function getStaticPaths() {
     fallback: false,
   }
 }
-
