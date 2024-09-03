@@ -45,9 +45,9 @@ function getSeries(date: string): string {
   const boundaryDate = parseISO('2024-09-01')
 
   if (parsedDate >= boundaryDate) {
-    return '1. série'
-  } else {
     return '2. série'
+  } else {
+    return '1. série'
   }
 }
 
