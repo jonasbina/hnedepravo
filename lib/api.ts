@@ -56,7 +56,7 @@ export function getAllPosts(fields: string[] = []) {
   const posts = slugs
       .map((slug) => getPostBySlug(slug, fields))
       .map((post) => {
-        post.excerpt = post.excerpt.replace("Hnědého Práva",  `${getSeries(post.date)} Hnědého Práva`);
+        post.excerpt = post.excerpt.replace(/(\d+)\. díl Hnědého práva/, (match, p1) => `${p1} díl ${getSeries(post.date)} Hnědého práva`);
         return post
       })
       // Sort posts by date in descending order
