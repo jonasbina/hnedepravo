@@ -1,3 +1,4 @@
+[![codebeat badge](https://codebeat.co/badges/aafa08e9-12a5-4bbf-82c5-67f278eed507)](https://codebeat.co/projects/github-com-jonasbina-hnedepravo-main)
 # Hnědé Právo
 
 A web blog for my friend's parodic newspaper
