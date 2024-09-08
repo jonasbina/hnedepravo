@@ -53,13 +53,13 @@ k těmto textům říkejte Kryštofovi Klenovskému osobně nebo mu napište na 
 
 **Ať je máma šťastná**
 
-V létě roste orchidej, <br>
-táto mámu om\*dej. <br>
-Strč jí ho tam po kulky,<br>
-zatahej ji za chloupky.<br>
-Dělejte to ve světničce,<br>
-vyš\*kej ji v ložnici,<br>
-ať jí někdy vyčaruješ,<br>
+V létě roste orchidej,\
+táto mámu om\*dej.\
+Strč jí ho tam po kulky,\
+zatahej ji za chloupky.\
+Dělejte to ve světničce,\
+vyš\*kej ji v ložnici,\
+ať jí někdy vyčaruješ,\
 malý úsměv na líci.
 
 ## **Vtip týdne:**
