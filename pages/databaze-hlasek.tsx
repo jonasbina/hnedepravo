@@ -70,7 +70,7 @@ const DatabazeHlasek = () => {
                             className="mt-1 p-2 border border-gray-300 rounded-md focus:outline-none focus:ring focus:border-blue-500"
                         >
                             <option value="">Všechny</option>
-                            {uniqueFiles.map((file) => (
+                            {uniqueFiles.sort((a, b) => b.localeCompare(a)).map((file) => (
                                 <option key={file} value={file}>
                                     {file}
                                 </option>
