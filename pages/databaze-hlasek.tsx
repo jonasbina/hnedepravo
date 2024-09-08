@@ -9,7 +9,7 @@ const DatabazeHlasek = () => {
     const [selectedFile, setSelectedFile] = useState('');
 
     const uniqueAuthors = [...new Set(quotesData.map((quote) => quote.author))];
-    const uniqueFiles = [...new Set(quotesData.map((quote) => quote.fileName))];
+    const uniqueFiles = [...new Set(quotesData.map((quote) => quote.name))];
 
     const filterQuotes = () => {
         let filteredQuotes = quotesData;
@@ -19,11 +19,11 @@ const DatabazeHlasek = () => {
         }
 
         if (selectedFile) {
-            filteredQuotes = filteredQuotes.filter((quote) => quote.fileName === selectedFile);
+            filteredQuotes = filteredQuotes.filter((quote) => quote.name === selectedFile);
         }
 
         // Sort quotes by the 'fileName' property in reverse order
-        filteredQuotes.sort((a, b) => b.fileName.localeCompare(a.fileName));
+        filteredQuotes.sort((a, b) => b.name.localeCompare(a.name));
 
         return filteredQuotes;
     };
