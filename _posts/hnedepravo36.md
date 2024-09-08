@@ -14,7 +14,7 @@ ogImage:
 Začal nový školní rok. K tomu patří i každoroční moshpit před dveřmi
 gymnázia.
 Naše redakce ke gymnáziu vyslala redaktora Štěpána Žabana
-kteréhož můžete znát i ze zpravodajství z Přibyslavi. „Je tu opravdu mnoho
+kteréhož můžete znát i ze zpravodajství z Přibyslavi. ,,Je tu opravdu mnoho
 lidí, někteří jsou zfetovaní, někteří začali praktikovat věci se*ualního rázu,
 ale většina jen čeká u dveří.“ Řekl Žaban.
 Podle Žabana pak v 6.00 přišel pan profesor školník a odemkl. V tu

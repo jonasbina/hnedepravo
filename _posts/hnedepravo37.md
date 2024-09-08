@@ -13,7 +13,7 @@ ogImage:
 
 V havlíčkobrodském gymnáziu byla ve středečních odpoledních hodinách
 nalezena mrtvola známého krasobruslaře Aloise Párka.
-„Děláme, co je v našich silách, máme vytipované 3 podezřelé.“
+,,Děláme, co je v našich silách, máme vytipované 3 podezřelé.“
 Vypověděl mluvčí policie Arnošt Přizdisral. Podle výpovědi, kterou podal
 policii PhDr. Jan Bechyně tito tři podezřelí ve středu opustili hodinu
 zeměpisu se záminkou cesty na záchod. A jak policie podle pitvy zjistila,
@@ -68,6 +68,6 @@ Jede vlak a přejede člověka.
 
 ## **Fakt týdne:**
 
-Slogan na poznávacích značkách státu New Hampshire zní „Live Free or
+Slogan na poznávacích značkách státu New Hampshire zní ,,Live Free or
 Die“ (Žij svobodně, nebo zemři). Ironií je, že státní poznávací značky vyrábějí
 vězni ze státní věznice v Concordu.

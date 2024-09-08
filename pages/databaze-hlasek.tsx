@@ -1,7 +1,7 @@
 // DatabazeHlasek.js
-import React, {useState} from 'react';
+import React, { useState } from 'react';
 import quotesData from '../public/quotes.json';
-import {Navbar} from "../components/navbar";
+import { Navbar } from "../components/navbar";
 import Header from "../components/header";
 
 const DatabazeHlasek = () => {
@@ -22,7 +22,15 @@ const DatabazeHlasek = () => {
             filteredQuotes = filteredQuotes.filter((quote) => quote.fileName === selectedFile);
         }
 
+        // Sort quotes by the 'fileName' property in reverse order
+        filteredQuotes.sort((a, b) => b.fileName.localeCompare(a.fileName));
+
         return filteredQuotes;
+    };
+
+    // Function to remove leading zeros from the filename
+    const removeLeadingZeros = (filename) => {
+        return filename.replace(/^0+/, '');
     };
 
     return (
@@ -79,7 +87,7 @@ const DatabazeHlasek = () => {
                                 <footer className="text-right text-gray-500 mt-2">{quote.author}</footer>
                             </blockquote>
                             <p className="mt-2">
-                                <a href={`/posts/${quote.fileName.replace('.md', '')}`}
+                                <a href={`/posts/${removeLeadingZeros(quote.fileName.replace('.md', ''))}`}
                                    className="text-blue-500 hover:underline">
                                     Zobrazit originální díl Hnědého Práva
                                 </a>
