@@ -1,5 +1,5 @@
 ---
-title: ',,Skibidi“, tvrdí Karel IV.'
+title: 'Karel IV. a jeho sexualita'
 excerpt: '3. díl Hnědého práva'
 coverImage: '/38.png'
 date: '2024-09-23T07:00:00.000Z'
