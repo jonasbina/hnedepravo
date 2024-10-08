@@ -26,23 +26,23 @@ křesle.*
 
 ## **Hlášky týdne:**
 
-Já nejsem tvoje masážní křeslo Tomáši!
+„Já nejsem tvoje masážní křeslo Tomáši!“
 
 - Štefan
 
-AAAAAA ty jsi mě probodnul ty neg*e, já ti ukradnu ledvinu!
+„AAAAAA ty jsi mě probodnul ty neg*e, já ti ukradnu ledvinu!“
 
 - Jony
 
-I don't scare nothing.
+„I don't scare nothing.“
 
 - Bára
 
-Já si jenom chci šáhnout, jestli to máš tvrdý.
+„Já si jenom chci šáhnout, jestli to máš tvrdý.“
 
 - Elena na Adama
 
-Neboj se, roztáhni ty nohy pořádně od sebe.
+„Neboj se, roztáhni ty nohy pořádně od sebe.“
 
 - Cápka na střelnici na Kristýnu
 
